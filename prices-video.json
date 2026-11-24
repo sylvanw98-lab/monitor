@@ -1,0 +1,366 @@
+{
+  "scrapedAt": "2026-11-19T03:56:35.887Z",
+  "product": "dreamina",
+  "settings": {
+    "ratio": "4:3",
+    "durations": "4s + 最长可选（最长不超过30s）",
+    "reference": "Omni reference → First and last frames",
+    "count": 1,
+    "prompt": "Ne Zha appears as a young boy with neat double buns tied with red ribbons. He has lively eyes and a confident expression. He wears classic red-and-black attire, with a red Huntian Silk Ribbon gently draped over his shoulders and arms, and a golden Qiankun Circle at his waist. Standing naturally, Ne Zha holds steady a hardcover notebook with a solid green cover in both hands. The cover is clean, with no text, patterns or logos. The shot slowly zooms in from a medium frame. Ne Zha lifts his eyes gently to look toward the camera. The Huntian Silk Ribbon sways softly in the breeze, and the notebook stays clearly centered in the frame. Chinese mythological theme, cinematic high-quality 3D animation, soft natural lighting, fine textures, smooth movements, stable shot, consistent character design throughout."
+  },
+  "models": [
+    {
+      "name": "Dreamina Seedance 2.5 Draft",
+      "entries": [
+        {
+          "resolution": "480P",
+          "duration": "4s",
+          "price": "52",
+          "original": "68",
+          "raw": "5268",
+          "parts": "52 68(s)"
+        },
+        {
+          "resolution": "480P",
+          "duration": "30s",
+          "price": "390",
+          "original": "510",
+          "raw": "390510",
+          "parts": "390 510(s)"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s",
+        "20s",
+        "25s",
+        "30s"
+      ]
+    },
+    {
+      "name": "Dreamina Seedance 2.5",
+      "entries": [
+        {
+          "resolution": "480P",
+          "duration": "4s",
+          "price": "68",
+          "original": null,
+          "raw": "68",
+          "parts": "68"
+        },
+        {
+          "resolution": "480P",
+          "duration": "30s",
+          "price": "510",
+          "original": null,
+          "raw": "510",
+          "parts": "510"
+        },
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "148",
+          "original": null,
+          "raw": "148",
+          "parts": "148"
+        },
+        {
+          "resolution": "720P",
+          "duration": "30s",
+          "price": "1110",
+          "original": null,
+          "raw": "1110",
+          "parts": "1110"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "364",
+          "original": null,
+          "raw": "364",
+          "parts": "364"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "30s",
+          "price": "2730",
+          "original": null,
+          "raw": "2730",
+          "parts": "2730"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s",
+        "20s",
+        "25s",
+        "30s"
+      ]
+    },
+    {
+      "name": "Dreamina Recreate",
+      "entries": [
+        {
+          "resolution": "480P",
+          "duration": null,
+          "price": "17",
+          "original": "19",
+          "raw": "1719",
+          "parts": "17 19(s)"
+        },
+        {
+          "resolution": "720P",
+          "duration": null,
+          "price": "37",
+          "original": "41",
+          "raw": "3741",
+          "parts": "37 41(s)"
+        },
+        {
+          "resolution": "1080P",
+          "duration": null,
+          "price": "72",
+          "original": "100",
+          "raw": "72100",
+          "parts": "72 100(s)"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Video recreator",
+      "ratio": null
+    },
+    {
+      "name": "Dreamina Seedance 2.0 Mini",
+      "entries": [
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "0",
+          "original": "48",
+          "raw": "048",
+          "parts": "0 48(s)"
+        },
+        {
+          "resolution": "720P",
+          "duration": "15s",
+          "price": "75",
+          "original": "180",
+          "raw": "75180",
+          "parts": "75 180(s)"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "44",
+          "original": "72",
+          "raw": "4472",
+          "parts": "44 72(s)"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "15s",
+          "price": "165",
+          "original": "270",
+          "raw": "165270",
+          "parts": "165 270(s)"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s"
+      ]
+    },
+    {
+      "name": "Dreamina Seedance 2.0 Fast",
+      "entries": [
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "32",
+          "original": "56",
+          "raw": "3256",
+          "parts": "32 56(s)"
+        },
+        {
+          "resolution": "720P",
+          "duration": "15s",
+          "price": "120",
+          "original": "210",
+          "raw": "120210",
+          "parts": "120 210(s)"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "56",
+          "original": "80",
+          "raw": "5680",
+          "parts": "56 80(s)"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "15s",
+          "price": "210",
+          "original": "300",
+          "raw": "210300",
+          "parts": "210 300(s)"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s"
+      ]
+    },
+    {
+      "name": "Dreamina Seedance 2.0",
+      "entries": [
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "68",
+          "original": null,
+          "raw": "68",
+          "parts": "68"
+        },
+        {
+          "resolution": "720P",
+          "duration": "15s",
+          "price": "255",
+          "original": null,
+          "raw": "255",
+          "parts": "255"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "164",
+          "original": null,
+          "raw": "164",
+          "parts": "164"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "15s",
+          "price": "615",
+          "original": null,
+          "raw": "615",
+          "parts": "615"
+        }
+      ],
+      "promptFilled": true,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s"
+      ]
+    },
+    {
+      "name": "Dreamina Seedance 1.5 Pro",
+      "entries": [
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "68",
+          "original": null,
+          "raw": "68",
+          "parts": "68"
+        },
+        {
+          "resolution": "720P",
+          "duration": "15s",
+          "price": "255",
+          "original": null,
+          "raw": "255",
+          "parts": "255"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "164",
+          "original": null,
+          "raw": "164",
+          "parts": "164"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "15s",
+          "price": "615",
+          "original": null,
+          "raw": "615",
+          "parts": "615"
+        }
+      ],
+      "promptFilled": false,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s"
+      ]
+    },
+    {
+      "name": "Dreamina Seedance 1.0 Mini",
+      "entries": [
+        {
+          "resolution": "720P",
+          "duration": "4s",
+          "price": "68",
+          "original": null,
+          "raw": "68",
+          "parts": "68"
+        },
+        {
+          "resolution": "720P",
+          "duration": "15s",
+          "price": "255",
+          "original": null,
+          "raw": "255",
+          "parts": "255"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "4s",
+          "price": "164",
+          "original": null,
+          "raw": "164",
+          "parts": "164"
+        },
+        {
+          "resolution": "1080P",
+          "duration": "15s",
+          "price": "615",
+          "original": null,
+          "raw": "615",
+          "parts": "615"
+        }
+      ],
+      "promptFilled": false,
+      "reference": "Omni reference",
+      "ratio": "4:3",
+      "durations": [
+        "5s",
+        "10s",
+        "15s"
+      ]
+    }
+  ]
+}

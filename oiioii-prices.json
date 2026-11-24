@@ -1,0 +1,553 @@
+{
+  "scrapedAt": "2026-11-16T06:25:44.345Z",
+  "platform": "oiioii",
+  "settings": {
+    "ratio": "1:1",
+    "count": 1,
+    "transparent": false,
+    "countNote": "张数 2/4 积分线性 ×2/×4",
+    "failedModels": []
+  },
+  "models": [
+    {
+      "name": "Seedream 5.5",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "默认",
+          "credits": 12,
+          "raw": "12"
+        },
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 14,
+          "raw": "14"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 2K"
+    },
+    {
+      "name": "GPT Image 2.6 Flare",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "credits": 4,
+          "raw": "4"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "credits": 20,
+          "raw": "20"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "credits": 14,
+          "raw": "14"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "credits": 36,
+          "raw": "36"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "credits": 40,
+          "raw": "40"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "credits": 56,
+          "raw": "56"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "credits": 80,
+          "raw": "80"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 2K · High"
+    },
+    {
+      "name": "GPT Image 2.6 Sunburst",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "credits": 4,
+          "raw": "4"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "credits": 20,
+          "raw": "20"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "credits": 14,
+          "raw": "14"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "credits": 36,
+          "raw": "36"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "credits": 40,
+          "raw": "40"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "credits": 56,
+          "raw": "56"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "credits": 80,
+          "raw": "80"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4K · High"
+    },
+    {
+      "name": "MiniMax H3 Image",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "默认",
+          "credits": 813,
+          "raw": "813"
+        },
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 915,
+          "raw": "915"
+        },
+        {
+          "resolution": "4K",
+          "quality": "默认",
+          "credits": 1525,
+          "raw": "1525"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4K"
+    },
+    {
+      "name": "GPT Image 2.5 Flare",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "credits": 4,
+          "raw": "4"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "credits": 20,
+          "raw": "20"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "credits": 14,
+          "raw": "14"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "credits": 36,
+          "raw": "36"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "credits": 40,
+          "raw": "40"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "credits": 56,
+          "raw": "56"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "credits": 80,
+          "raw": "80"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4K · High"
+    },
+    {
+      "name": "GPT Image 2.5 Sunburst",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "credits": 4,
+          "raw": "4"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "credits": 20,
+          "raw": "20"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "credits": 14,
+          "raw": "14"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "credits": 36,
+          "raw": "36"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "credits": 40,
+          "raw": "40"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "credits": 56,
+          "raw": "56"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "credits": 80,
+          "raw": "80"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4K · High"
+    },
+    {
+      "name": "GPT Image 2",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "credits": 4,
+          "raw": "4"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "credits": 6,
+          "raw": "6"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "credits": 8,
+          "raw": "8"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "credits": 10,
+          "raw": "10"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "credits": 14,
+          "raw": "14"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "credits": 36,
+          "raw": "36"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "credits": 50,
+          "raw": "50"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "credits": 56,
+          "raw": "56"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "credits": 80,
+          "raw": "80"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4K · High"
+    },
+    {
+      "name": "Seedream 5.0 Pro",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "默认",
+          "credits": 9,
+          "raw": "9"
+        },
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 12,
+          "raw": "12"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 2K"
+    },
+    {
+      "name": "HunYuan Image 3.5",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "默认",
+          "credits": 7,
+          "raw": "7"
+        },
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 7,
+          "raw": "7"
+        },
+        {
+          "resolution": "4K",
+          "quality": "默认",
+          "credits": 12,
+          "raw": "12"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 1k"
+    },
+    {
+      "name": "Nano Banana 2.1",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "默认",
+          "credits": 5,
+          "raw": "5"
+        },
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 7,
+          "raw": "7"
+        },
+        {
+          "resolution": "4K",
+          "quality": "默认",
+          "credits": 18,
+          "raw": "18"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 4k"
+    },
+    {
+      "name": "Nano Banana Pro",
+      "entries": [
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        },
+        {
+          "resolution": "4K",
+          "quality": "默认",
+          "credits": 20,
+          "raw": "20"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 2K"
+    },
+    {
+      "name": "Midjourney v8.2",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    },
+    {
+      "name": "OII Story AI 5.0",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    },
+    {
+      "name": "Nano Banana 2",
+      "entries": [
+        {
+          "resolution": "2K",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        },
+        {
+          "resolution": "4K",
+          "quality": "默认",
+          "credits": 20,
+          "raw": "20"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1 · 2K"
+    },
+    {
+      "name": "Midjourney v8.1",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    },
+    {
+      "name": "Niji 7",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    },
+    {
+      "name": "Niji 6",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    },
+    {
+      "name": "OII Story AI",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 11,
+          "raw": "11"
+        }
+      ],
+      "popOpen": true,
+      "tuneLabel": "1:1",
+      "note": "该模型无分辨率选项，仅记录默认档（见 tuneLabel）"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "scrapedAt": "2026-11-12T06:32:36.509Z",
+  "sources": [
+    {
+      "type": "image",
+      "url": "https://dreamina.capcut.com/ai-tool/home?type=image",
+      "models": [
+        {
+          "name": "Seedream 5.0 Pro",
+          "isNew": true,
+          "desc": "Optimized for cinematic & text-rich visuals"
+        },
+        {
+          "name": "GPT Image 2.5 Flare",
+          "isNew": true,
+          "desc": "Everyday generation and editing, made faster"
+        },
+        {
+          "name": "GPT Image 2.5 Sunburst",
+          "isNew": true,
+          "desc": "Sharper details and more precise editing"
+        },
+        {
+          "name": "GPT Image 2",
+          "isNew": true,
+          "desc": "True-to-life details, precise text rendering."
+        },
+        {
+          "name": "Nano Banana Pro",
+          "isNew": true,
+          "desc": "Generate more accurate, context-rich visuals."
+        },
+        {
+          "name": "Seedream 5.0 Flash",
+          "isNew": true,
+          "desc": "Balanced quality, faster, cheaper"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "url": "https://dreamina.capcut.com/ai-tool/home?type=video",
+      "models": [
+        {
+          "name": "Dreamina Seedance 2.5 Draft",
+          "isNew": false,
+          "desc": "Creates 480p drafts to test ideas before committing more credits"
+        },
+        {
+          "name": "Dreamina Seedance 2.5",
+          "isNew": false,
+          "desc": "More realistic, longer videos, precise editing. Up to 50 references."
+        },
+        {
+          "name": "Dreamina Recreate",
+          "isNew": true,
+          "desc": "Motion transfer, object swap, and creative remix, up to 30s"
+        },
+        {
+          "name": "Dreamina Seedance 2.0 Mini",
+          "isNew": false,
+          "desc": "Most cost-effective, quicker results"
+        },
+        {
+          "name": "Dreamina Seedance 2.0 Fast",
+          "isNew": false,
+          "desc": "Fast generation, lower cost"
+        },
+        {
+          "name": "Dreamina Seedance 2.0",
+          "isNew": false,
+          "desc": "Most versatile, director-level control"
+        },
+        {
+          "name": "Dreamina Seedance 1.5 Pro",
+          "isNew": false,
+          "desc": "Generates videos with synced, natural sound."
+        },
+        {
+          "name": "Dreamina Seedance 1.0 Mini",
+          "isNew": false,
+          "desc": "Creates multiple scenes with one detailed prompt."
+        }
+      ]
+    }
+  ]
+}

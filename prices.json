@@ -1,0 +1,465 @@
+{
+  "scrapedAt": "2026-11-20T03:06:52.237Z",
+  "product": "dreamina",
+  "settings": {
+    "ratio": "1:1",
+    "count": 1,
+    "prompt": "Ne Zha, young boy, double bun hairstyle tied with red ribbons, classic red-and-black Huntian silk ribbon, Qiankun Circle, bright and vivid eyes, standing naturally, holding a hardcover notebook with a solid green cover in both hands, the notebook is clean."
+  },
+  "models": [
+    {
+      "name": "Seedream 5.0 Pro",
+      "entries": [
+        {
+          "resolution": "2K",
+          "quality": null,
+          "price": "12",
+          "original": "16",
+          "raw": "12/image16/image",
+          "parts": "12 16(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": null,
+          "price": "18",
+          "original": "21",
+          "raw": "18/image21/image",
+          "parts": "18 21(s)"
+        }
+      ]
+    },
+    {
+      "name": "GPT Image 2.5 Flare",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "price": "6",
+          "original": "8",
+          "raw": "68",
+          "parts": "6 8(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "price": "8",
+          "original": "10",
+          "raw": "810",
+          "parts": "8 10(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "price": "17",
+          "original": "23",
+          "raw": "1723",
+          "parts": "17 23(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Ultra",
+          "price": "26",
+          "original": "35",
+          "raw": "2635",
+          "parts": "26 35(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Max",
+          "price": "54",
+          "original": "72",
+          "raw": "5472",
+          "parts": "54 72(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "price": "7",
+          "original": "10",
+          "raw": "710",
+          "parts": "7 10(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "price": "11",
+          "original": "14",
+          "raw": "1114",
+          "parts": "11 14(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "price": "30",
+          "original": "39",
+          "raw": "3039",
+          "parts": "30 39(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Ultra",
+          "price": "49",
+          "original": "65",
+          "raw": "4965",
+          "parts": "49 65(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Max",
+          "price": "104",
+          "original": "139",
+          "raw": "104139",
+          "parts": "104 139(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "price": "8",
+          "original": "11",
+          "raw": "811",
+          "parts": "8 11(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "price": "13",
+          "original": "17",
+          "raw": "1317",
+          "parts": "13 17(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "price": "37",
+          "original": "49",
+          "raw": "3749",
+          "parts": "37 49(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Ultra",
+          "price": "63",
+          "original": "84",
+          "raw": "6384",
+          "parts": "63 84(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Max",
+          "price": "136",
+          "original": "181",
+          "raw": "136181",
+          "parts": "136 181(s)"
+        }
+      ]
+    },
+    {
+      "name": "GPT Image 2.5 Sunburst",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "price": "6",
+          "original": "8",
+          "raw": "68",
+          "parts": "6 8(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "price": "8",
+          "original": "10",
+          "raw": "810",
+          "parts": "8 10(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "price": "17",
+          "original": "23",
+          "raw": "1723",
+          "parts": "17 23(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Ultra",
+          "price": "26",
+          "original": "35",
+          "raw": "2635",
+          "parts": "26 35(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Max",
+          "price": "54",
+          "original": "72",
+          "raw": "5472",
+          "parts": "54 72(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "price": "7",
+          "original": "10",
+          "raw": "710",
+          "parts": "7 10(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "price": "11",
+          "original": "14",
+          "raw": "1114",
+          "parts": "11 14(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "price": "30",
+          "original": "39",
+          "raw": "3039",
+          "parts": "30 39(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Ultra",
+          "price": "49",
+          "original": "65",
+          "raw": "4965",
+          "parts": "49 65(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Max",
+          "price": "104",
+          "original": "139",
+          "raw": "104139",
+          "parts": "104 139(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "price": "8",
+          "original": "11",
+          "raw": "811",
+          "parts": "8 11(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "price": "13",
+          "original": "17",
+          "raw": "1317",
+          "parts": "13 17(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "price": "37",
+          "original": "49",
+          "raw": "3749",
+          "parts": "37 49(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Ultra",
+          "price": "63",
+          "original": "84",
+          "raw": "6384",
+          "parts": "63 84(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Max",
+          "price": "136",
+          "original": "181",
+          "raw": "136181",
+          "parts": "136 181(s)"
+        }
+      ]
+    },
+    {
+      "name": "GPT Image 2",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": "Low",
+          "price": "6",
+          "original": "8",
+          "raw": "68",
+          "parts": "6 8(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Medium",
+          "price": "8",
+          "original": "10",
+          "raw": "810",
+          "parts": "8 10(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "High",
+          "price": "17",
+          "original": "23",
+          "raw": "1723",
+          "parts": "17 23(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Ultra",
+          "price": "26",
+          "original": "35",
+          "raw": "2635",
+          "parts": "26 35(s)"
+        },
+        {
+          "resolution": "1K",
+          "quality": "Max",
+          "price": "54",
+          "original": "72",
+          "raw": "5472",
+          "parts": "54 72(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Low",
+          "price": "7",
+          "original": "10",
+          "raw": "710",
+          "parts": "7 10(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Medium",
+          "price": "11",
+          "original": "14",
+          "raw": "1114",
+          "parts": "11 14(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "High",
+          "price": "30",
+          "original": "39",
+          "raw": "3039",
+          "parts": "30 39(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Ultra",
+          "price": "49",
+          "original": "65",
+          "raw": "4965",
+          "parts": "49 65(s)"
+        },
+        {
+          "resolution": "2K",
+          "quality": "Max",
+          "price": "104",
+          "original": "139",
+          "raw": "104139",
+          "parts": "104 139(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Low",
+          "price": "8",
+          "original": "11",
+          "raw": "811",
+          "parts": "8 11(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Medium",
+          "price": "13",
+          "original": "17",
+          "raw": "1317",
+          "parts": "13 17(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "High",
+          "price": "37",
+          "original": "49",
+          "raw": "3749",
+          "parts": "37 49(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Ultra",
+          "price": "63",
+          "original": "84",
+          "raw": "6384",
+          "parts": "63 84(s)"
+        },
+        {
+          "resolution": "4K",
+          "quality": "Max",
+          "price": "136",
+          "original": "181",
+          "raw": "136181",
+          "parts": "136 181(s)"
+        }
+      ]
+    },
+    {
+      "name": "Nano Banana Pro",
+      "entries": [
+        {
+          "resolution": "1K",
+          "quality": null,
+          "price": "42",
+          "original": null,
+          "raw": "42/image",
+          "parts": "42"
+        },
+        {
+          "resolution": "2K",
+          "quality": null,
+          "price": "42",
+          "original": null,
+          "raw": "42/image",
+          "parts": "42"
+        },
+        {
+          "resolution": "4K",
+          "quality": null,
+          "price": "75",
+          "original": null,
+          "raw": "75/image",
+          "parts": "75"
+        }
+      ]
+    },
+    {
+      "name": "Seedream 5.0 Flash",
+      "entries": [
+        {
+          "resolution": "1.5K",
+          "quality": null,
+          "price": "6",
+          "original": null,
+          "raw": "6/image",
+          "parts": "6"
+        },
+        {
+          "resolution": "2K",
+          "quality": null,
+          "price": "6",
+          "original": null,
+          "raw": "6/image",
+          "parts": "6"
+        },
+        {
+          "resolution": "4K",
+          "quality": null,
+          "price": "10",
+          "original": null,
+          "raw": "10/image",
+          "parts": "10"
+        }
+      ]
+    }
+  ]
+}

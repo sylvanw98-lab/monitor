@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海外ai竞品监控</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --border: #e3e6eb;
+    --text: #1f2328;
+    --muted: #6b7280;
+    --accent: #3b7bf2;
+    --green: #1a7f37;
+    --red: #cf222e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .layout { display: flex; min-height: 100vh; }
+  .sidebar {
+    width: 190px;
+    flex-shrink: 0;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .sidebar .logo {
+    padding: 0 16px 14px;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+  }
+  .nav-item {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .nav-item:hover { color: var(--text); background: rgba(0,0,0,.04); }
+  .nav-item.active {
+    color: var(--text);
+    background: rgba(59,123,242,.08);
+    border-left-color: var(--accent);
+  }
+  .main { flex: 1; min-width: 0; padding: 24px 28px 40px; }
+  header { margin-bottom: 6px; }
+  h1 { font-size: 22px; margin: 0; }
+  .static-tag {
+    margin-left: 12px;
+    font-size: 12px;
+    color: var(--accent);
+    background: rgba(94, 129, 244, .12);
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  button#refresh, button#refreshPrices, button#refreshVideoPrices {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity .15s;
+    font-family: inherit;
+  }
+  button#refresh:hover:not(:disabled),
+  button#refreshPrices:hover:not(:disabled),
+  button#refreshVideoPrices:hover:not(:disabled) { opacity: .85; }
+  button#refresh:disabled, button#refreshPrices:disabled,
+  button#refreshVideoPrices:disabled { opacity: .5; cursor: not-allowed; }
+  .refresh-wrap { position: relative; display: inline-block; }
+  .refresh-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: auto;
+    right: 0;
+    min-width: 210px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px;
+    display: none;
+    z-index: 60;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  .refresh-menu.open { display: block; }
+  .refresh-opt {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .refresh-opt:hover { background: rgba(59,123,242,.12); }
+  .status-line {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 6px 0 16px;
+  }
+  .spinner {
+    display: inline-block;
+    width: 13px; height: 13px;
+    border: 2px solid var(--muted);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+    vertical-align: -2px;
+    margin-right: 6px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .error-box {
+    background: rgba(207, 34, 46, .08);
+    border: 1px solid var(--red);
+    color: var(--red);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .section { display: none; }
+  .section.active { display: block; }
+  .section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 12px;
+  }
+  .section-head h2 {
+    font-size: 17px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+    margin: 0;
+  }
+  .mtab-bar { display: flex; gap: 8px; margin: 16px 0 10px; }
+  .mtab {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .mtab:hover { color: var(--text); }
+  .mtab.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(74,120,255,.08);
+  }
+  .mtab .count { opacity: .7; font-size: 12px; margin-left: 4px; }
+  .sub-head {
+    font-size: 15px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+    margin: 24px 0 10px;
+  }
+  .diff-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0 0 20px;
+  }
+  .diff-panel h2 { font-size: 15px; margin: 0 0 8px; }
+  .diff-panel .range { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 12px;
+    margin: 3px 6px 3px 0;
+  }
+  .badge.added { background: rgba(26,127,55,.1); color: var(--green); border: 1px solid var(--green); }
+  .badge.removed { background: rgba(207,34,46,.1); color: var(--red); border: 1px solid var(--red); }
+  .p-badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 1px 9px;
+    font-size: 11px;
+    margin: 1px 4px 1px 0;
+    background: rgba(74,120,255,.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    white-space: nowrap;
+  }
+  .empty-diff { color: var(--muted); font-size: 13px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 600; background: rgba(0,0,0,.03); }
+  tr:last-child td { border-bottom: none; }
+  td.idx { color: var(--muted); width: 44px; }
+  td.name { font-weight: 600; white-space: nowrap; }
+  td.prod { white-space: nowrap; color: var(--accent); }
+  .new-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 8px;
+    vertical-align: 2px;
+  }
+  .empty-tip { color: var(--muted); font-size: 14px; padding: 20px; text-align: center; }
+  .prompt-note {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 8px;
+    word-break: break-all;
+    line-height: 1.6;
+  }
+  td.price { font-weight: 600; white-space: nowrap; }
+  td.price s { color: var(--muted); font-weight: 400; margin-left: 6px; }
+  .err-tag {
+    display: inline-block;
+    background: rgba(207,34,46,.1);
+    color: var(--red);
+    border: 1px solid var(--red);
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 8px;
+    vertical-align: 2px;
+  }
+  .filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .filter-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .chip-group { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    background: var(--panel);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .chip:hover { color: var(--text); border-color: var(--muted); }
+  .chip.active {
+    background: rgba(59,123,242,.12);
+    color: var(--accent);
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .page-btn {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .page-btn:disabled { opacity: .4; cursor: not-allowed; }
+  .page-nums { display: inline-flex; gap: 6px; }
+  .page-num {
+    min-width: 32px;
+    padding: 6px 8px;
+    background: var(--panel);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .page-num:hover { color: var(--text); border-color: var(--muted); }
+  .page-num.active {
+    background: rgba(59,123,242,.12);
+    color: var(--accent);
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .page-info { color: var(--muted); font-size: 12px; }
+  .filter-bar .flabel { color: var(--muted); font-size: 12px; }
+  .filter-bar select, .filter-bar input {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+  }
+  .filter-bar select:focus { border-color: var(--accent); }
+  .reset-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .reset-btn:hover { color: var(--text); border-color: var(--muted); }
+  .placeholder-box {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 56px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="logo">海外ai竞品监控</div>
+    <button class="nav-item active" data-section="pricesImage">图片定价</button>
+    <button class="nav-item" data-section="pricesVideo">视频定价</button>
+    <button class="nav-item" data-section="monitor">模型监控</button>
+  </nav>
+  <main class="main">
+    <header>
+      <h1>海外ai竞品监控</h1>
+    </header>
+    <div class="status-line" id="status">加载中…</div>
+    <div class="error-box" id="error" style="display:none"></div>
+
+    <section class="section active" id="sec-pricesImage">
+      <div class="section-head">
+        <h2>图片模型积分价目</h2>
+        <div class="refresh-wrap">
+          <button id="refreshPrices">抓取积分 ▾</button>
+          <div class="refresh-menu" id="refreshMenu">
+            <button type="button" class="refresh-opt" data-target="all">全部抓取</button>
+            <button type="button" class="refresh-opt" data-target="dreamina">仅抓取 dreamina</button>
+            <button type="button" class="refresh-opt" data-target="oiioii">仅抓取 oiioii</button>
+            <button type="button" class="refresh-opt" data-target="krea">仅抓取 krea</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-row">
+          <span class="flabel">产品</span>
+          <div class="chip-group" id="fProduct"></div>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">模型</span>
+          <select id="fModel"><option value="all">全部模型</option></select>
+          <button class="reset-btn" id="fReset">重置</button>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">分辨率</span>
+          <div class="chip-group" id="fRes"></div>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">质量</span>
+          <div class="chip-group" id="fQual"></div>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">张数</span>
+          <div class="chip-group" id="fCount"></div>
+        </div>
+      </div>
+      <div id="priceList"></div>
+      <div class="prompt-note" id="pricePrompt" style="display:none"></div>
+      <div class="pagination" id="pagination" style="display:none">
+        <button class="page-btn" id="prevPage">上一页</button>
+        <div class="page-nums" id="pageNums"></div>
+        <button class="page-btn" id="nextPage">下一页</button>
+        <span class="page-info" id="pageInfo"></span>
+      </div>
+    </section>
+
+    <section class="section" id="sec-pricesVideo">
+      <div class="section-head">
+        <h2>视频模型积分价目</h2>
+        <div class="refresh-wrap" id="refreshVideoWrap">
+          <button id="refreshVideoPrices">抓取积分 ▾</button>
+          <div class="refresh-menu" id="refreshVideoMenu">
+            <button type="button" class="refresh-opt" data-target="all">全部抓取</button>
+            <button type="button" class="refresh-opt" data-target="dreamina">仅抓取 dreamina</button>
+            <button type="button" class="refresh-opt" data-target="kreaVideo">仅抓取 krea 视频</button>
+            <button type="button" class="refresh-opt" data-target="liblibVideo">仅抓取 liblib 视频</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-row">
+          <span class="flabel">产品</span>
+          <div class="chip-group" id="vfProduct"></div>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">模型</span>
+          <select id="vfModel"><option value="all">全部模型</option></select>
+          <button class="reset-btn" id="vfReset">重置</button>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">分辨率</span>
+          <div class="chip-group" id="vfRes"></div>
+        </div>
+        <div class="filter-row">
+          <span class="flabel">时长</span>
+          <div class="chip-group" id="vfDur"></div>
+        </div>
+      </div>
+      <div id="vPriceList"></div>
+      <div class="prompt-note" id="vPricePrompt" style="display:none"></div>
+      <div class="pagination" id="vPagination" style="display:none">
+        <button class="page-btn" id="vPrevPage">上一页</button>
+        <div class="page-nums" id="vPageNums"></div>
+        <button class="page-btn" id="vNextPage">下一页</button>
+        <span class="page-info" id="vPageInfo"></span>
+      </div>
+    </section>
+
+    <section class="section" id="sec-monitor">
+      <div class="section-head">
+        <h2>模型列表监控</h2>
+        <button id="refresh">刷新</button>
+      </div>
+      <div class="diff-panel" id="diffPanel" style="display:none">
+        <h2>与上次快照的差异</h2>
+        <div class="range" id="diffRange"></div>
+        <div id="diffContent"></div>
+      </div>
+      <div class="mtab-bar">
+        <button class="mtab active" id="monTabImage">AI 图片模型<span class="count" id="monTabImageCount"></span></button>
+        <button class="mtab" id="monTabVideo">AI 视频模型<span class="count" id="monTabVideoCount"></span></button>
+      </div>
+      <div id="imageList"></div>
+      <div class="pagination" id="monImagePagination" style="display:none">
+        <button class="page-btn" id="monImagePrev">上一页</button>
+        <div class="page-nums" id="monImageNums"></div>
+        <button class="page-btn" id="monImageNext">下一页</button>
+        <span class="page-info" id="monImageInfo"></span>
+      </div>
+      <div id="videoList" style="display:none"></div>
+      <div class="pagination" id="monVideoPagination" style="display:none">
+        <button class="page-btn" id="monVideoPrev">上一页</button>
+        <div class="page-nums" id="monVideoNums"></div>
+        <button class="page-btn" id="monVideoNext">下一页</button>
+        <span class="page-info" id="monVideoInfo"></span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+let priceData = null;
+
+function fmtTime(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  return d.toLocaleString("zh-CN", { hour12: false });
+}
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+  );
+}
+
+function unique(arr) {
+  return [...new Set(arr)];
+}
+
+// ---- 左侧导航 ----
+document.querySelectorAll(".nav-item").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".nav-item").forEach((b) => b.classList.toggle("active", b === btn));
+    document.querySelectorAll(".section").forEach((s) =>
+      s.classList.toggle("active", s.id === "sec-" + btn.dataset.section)
+    );
+  });
+});
+
+// ---- 模型列表监控 ----
+const monModels = { image: [], video: [] };
+const monPages = { image: 1, video: 1 };
+
+function switchMonTab(type) {
+  const img = type === "image";
+  $("monTabImage").classList.toggle("active", img);
+  $("monTabVideo").classList.toggle("active", !img);
+  $("imageList").style.display = img ? "" : "none";
+  $("monImagePagination").style.display = img && monModels.image.length ? "" : "none";
+  $("videoList").style.display = img ? "none" : "";
+  $("monVideoPagination").style.display = !img && monModels.video.length ? "" : "none";
+}
+$("monTabImage").addEventListener("click", () => switchMonTab("image"));
+$("monTabVideo").addEventListener("click", () => switchMonTab("video"));
+
+function renderMonTable(type) {
+  const models = monModels[type] || [];
+  const p = type === "image" ? "monImage" : "monVideo";
+  const el = $(type === "image" ? "imageList" : "videoList");
+  if (!models.length) {
+    el.innerHTML = '<div class="empty-tip">暂无数据，请点击"模型监控"页的"刷新"按钮抓取</div>';
+    $(p + "Pagination").style.display = "none";
+    return;
+  }
+  const totalPages = Math.max(1, Math.ceil(models.length / PAGE_SIZE));
+  if (monPages[type] > totalPages) monPages[type] = totalPages;
+  const page = monPages[type];
+  const start = (page - 1) * PAGE_SIZE;
+  const rows = models
+    .slice(start, start + PAGE_SIZE)
+    .map(
+      (m, i) => `<tr>
+        <td class="idx">${start + i + 1}</td>
+        <td class="name">${escapeHtml(m.name)}${m.isNew ? '<span class="new-tag">NEW</span>' : ""}</td>
+        <td>${(m.platforms || []).map((p) => `<span class="p-badge">${escapeHtml(p)}</span>`).join("")}</td>
+        <td>${escapeHtml(m.desc || "")}</td>
+      </tr>`
+    )
+    .join("");
+  el.innerHTML = `<table><thead><tr><th>#</th><th>模型名称</th><th>平台</th><th>说明</th></tr></thead><tbody>${rows}</tbody></table>`;
+  const pagEl = $(p + "Pagination");
+  const listEl = type === "image" ? $("imageList") : $("videoList");
+  pagEl.style.display = listEl.style.display === "none" ? "none" : "";
+  $(p + "Prev").disabled = page <= 1;
+  $(p + "Next").disabled = page >= totalPages;
+  const nums = $(p + "Nums");
+  nums.innerHTML = "";
+  for (let i = 1; i <= totalPages; i++) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "page-num" + (i === page ? " active" : "");
+    b.textContent = i;
+    b.addEventListener("click", () => {
+      monPages[type] = i;
+      renderMonTable(type);
+    });
+    nums.appendChild(b);
+  }
+  $(p + "Info").textContent = `第 ${page} / ${totalPages} 页 · 共 ${models.length} 个模型`;
+  $("monTabImageCount").textContent = `（${monModels.image.length}）`;
+  $("monTabVideoCount").textContent = `（${monModels.video.length}）`;
+}
+
+function bindMonPager(type) {
+  const p = type === "image" ? "monImage" : "monVideo";
+  $(p + "Prev").addEventListener("click", () => {
+    if (monPages[type] > 1) {
+      monPages[type]--;
+      renderMonTable(type);
+    }
+  });
+  $(p + "Next").addEventListener("click", () => {
+    const totalPages = Math.max(1, Math.ceil((monModels[type] || []).length / PAGE_SIZE));
+    if (monPages[type] < totalPages) {
+      monPages[type]++;
+      renderMonTable(type);
+    }
+  });
+}
+bindMonPager("image");
+bindMonPager("video");
+
+function renderDiff(diff, baseline) {
+  const panel = $("diffPanel");
+  const content = $("diffContent");
+  if (baseline) {
+    panel.style.display = "block";
+    content.innerHTML = '<span class="empty-diff">基线快照（无历史可对比），后续刷新将自动对比变化</span>';
+    return;
+  }
+  const added = diff.added || [];
+  const removed = diff.removed || [];
+  if (added.length === 0 && removed.length === 0) {
+    panel.style.display = "block";
+    content.innerHTML = '<span class="empty-diff">无变化</span>';
+    return;
+  }
+  const parts = [];
+  if (added.length) {
+    parts.push(
+      added
+        .map((a) => {
+          const plats = (a.platforms || []).map((p) => escapeHtml(p)).join("/");
+          return `<span class="badge added">新增：${escapeHtml(a.type === "image" ? "图片" : "视频")} · ${escapeHtml(a.name)}${plats ? `（${plats}）` : ""}</span>`;
+        })
+        .join("")
+    );
+  }
+  if (removed.length) {
+    parts.push(
+      removed
+        .map((a) => `<span class="badge removed">消失：${escapeHtml(a.type === "image" ? "图片" : "视频")} · ${escapeHtml(a.name)}</span>`)
+        .join("")
+    );
+  }
+  panel.style.display = "block";
+  content.innerHTML = parts.join("");
+}
+
+let dataPayload = null;
+
+function render(payload) {
+  dataPayload = payload;
+  $("error").style.display = "none";
+  const cur = payload.current;
+  if (!cur) {
+    $("status").textContent = "暂无数据，请点击刷新";
+    $("diffPanel").style.display = "none";
+    monModels.image = [];
+    monModels.video = [];
+    monPages.image = 1;
+    monPages.video = 1;
+    renderMonTable("image");
+    renderMonTable("video");
+    return;
+  }
+  const unified = cur.unified || {};
+  monModels.image = unified.image || [];
+  monModels.video = unified.video || [];
+  monPages.image = 1;
+  monPages.video = 1;
+  renderMonTable("image");
+  renderMonTable("video");
+  const img = monModels.image;
+  const vid = monModels.video;
+  renderDiff(payload.diff, payload.baseline);
+  $("diffRange").textContent =
+    `本次快照：${fmtTime(cur.scrapedAt)}` +
+    (payload.previousAt ? `　对比：${fmtTime(payload.previousAt)}` : "") +
+    `　累计快照：${payload.snapshotCount} 份`;
+  renderStatusLine();
+}
+
+function renderStatusLine() {
+  const cur = dataPayload && dataPayload.current;
+  if (!cur) {
+    $("status").textContent = "暂无数据，请点击刷新";
+    return;
+  }
+  const parts = ["模型 " + fmtTime(cur.scrapedAt)];
+  const imgT = [priceData, oiioiiData, kreaData]
+    .map((d) => (d && d.exists ? d.scrapedAt : null))
+    .filter(Boolean)
+    .sort()
+    .pop();
+  if (imgT) parts.push("图片积分 " + fmtTime(imgT));
+  const vidT = [videoPriceData, kreaVideoData, liblibVideoData]
+    .map((d) => (d && d.exists ? d.scrapedAt || d.collectedAt : null))
+    .filter(Boolean)
+    .sort()
+    .pop();
+  if (vidT) parts.push("视频积分 " + fmtTime(vidT));
+  $("status").textContent = "最后更新：" + parts.join(" · ");
+}
+
+async function loadData() {
+  if (window.__STATIC__) {
+    render(window.__STATIC__.data);
+    return;
+  }
+  try {
+    const res = await fetch("/data");
+    render(await res.json());
+  } catch (err) {
+    showError("加载数据失败：" + err);
+  }
+}
+
+function showError(msg) {
+  const el = $("error");
+  el.style.display = "block";
+  el.textContent = msg;
+}
+
+async function doRefresh() {
+  const btn = $("refresh");
+  btn.disabled = true;
+  btn.textContent = "刷新中…";
+  $("status").innerHTML = '<span class="spinner"></span>正在抓取各平台（dreamina/krea/liblib/oiioii）模型列表，请稍候（约 2-4 分钟）';
+  $("error").style.display = "none";
+  try {
+    const res = await fetch("/refresh", { method: "POST" });
+    const payload = await res.json();
+    if (!res.ok) {
+      showError("刷新失败：" + (payload.error || res.status));
+    } else {
+      render(payload);
+    }
+  } catch (err) {
+    showError("刷新失败：" + err);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "刷新";
+  }
+}
+
+// ---- 图片定价 ----
+let oiioiiData = null;
+const OII_COUNTS = [1, 2, 4];
+let kreaData = null;
+const KREA_COUNTS = [1, 2, 3, 4];
+
+function flattenEntries(models) {
+  return models.flatMap((m) =>
+    (m.entries || []).map((e) => ({ model: m.name, modelError: m.error, product: "dreamina", count: 1, ...e }))
+  );
+}
+
+function flattenOiiEntries(models) {
+  const rows = [];
+  for (const m of models || []) {
+    for (const e of m.entries || []) {
+      for (const c of OII_COUNTS) {
+        rows.push({
+          model: m.name,
+          modelError: m.error,
+          product: "oiioii",
+          resolution: e.resolution === "默认" ? "默认" : String(e.resolution || "默认").toUpperCase(),
+          quality: e.quality || "默认",
+          price: e.credits == null ? "?" : e.credits * c,
+          count: c,
+        });
+      }
+    }
+  }
+  return rows;
+}
+
+function flattenKreaEntries(models) {
+  const rows = [];
+  for (const m of models || []) {
+    const hasThinking = (m.entries || []).some((e) => e.thinking);
+    for (const e of m.entries || []) {
+      // Krea 3：基础档与 Fast 重复（同为免费档），跳过无 thinking 的条目
+      if (hasThinking && !e.thinking) continue;
+      const res = e.resolution === "默认" ? "默认" : String(e.resolution || "默认").toUpperCase();
+      const qual = e.thinking ? "思考 " + e.thinking : e.quality || "默认";
+      const priceStr = (c) =>
+        e.credits == null
+          ? "需参考图"
+          : (e.isEstimated ? "~" : "") + e.credits * c;
+      const counts = e.credits == null ? [1] : KREA_COUNTS;
+      for (const c of counts) {
+        rows.push({
+          model: m.name,
+          modelError: m.error,
+          modelNote: m.note,
+          product: "krea",
+          resolution: res,
+          quality: qual,
+          price: priceStr(c),
+          count: c,
+          note: e.note,
+        });
+      }
+    }
+  }
+  return rows;
+}
+
+function allEntries() {
+  const a = priceData && priceData.exists ? flattenEntries(priceData.models || []) : [];
+  const b = oiioiiData && oiioiiData.exists ? flattenOiiEntries(oiioiiData.models || []) : [];
+  const c = kreaData && kreaData.exists ? flattenKreaEntries(kreaData.models || []) : [];
+  return [...a, ...b, ...c];
+}
+
+const PRODUCTS = ["dreamina", "oiioii", "krea"];
+const VPRODUCTS = ["dreamina", "krea", "liblib"];
+let productFilter = "all";
+let resFilter = "all";
+let qualFilter = "all";
+let countFilter = "1";
+const PAGE_SIZE = 20;
+let currentPage = 1;
+
+function updateChipStates() {
+  document.querySelectorAll("#sec-pricesImage .chip").forEach((c) => {
+    const g = c.closest(".chip-group").id;
+    const cur =
+      g === "fRes" ? resFilter : g === "fQual" ? qualFilter : g === "fCount" ? countFilter : productFilter;
+    c.classList.toggle("active", c.dataset.value === cur);
+  });
+}
+
+function renderChipGroup(container, items, setVal) {
+  container.innerHTML = "";
+  for (const [v, t] of items) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip";
+    chip.dataset.value = v;
+    chip.textContent = t;
+    chip.addEventListener("click", () => {
+      setVal(v);
+      updateChipStates();
+      applyFilterChange();
+    });
+    container.appendChild(chip);
+  }
+}
+
+function fillModelSelect() {
+  const sel = $("fModel");
+  const models = unique(
+    allEntries()
+      .filter((e) => productFilter === "all" || e.product === productFilter)
+      .map((e) => e.model)
+  );
+  const cur = sel.value;
+  sel.innerHTML = [["all", "全部模型"], ...models.map((m) => [m, m])]
+    .map(([v, t]) => `<option value="${escapeHtml(v)}">${escapeHtml(t)}</option>`)
+    .join("");
+  if (models.includes(cur)) sel.value = cur;
+}
+
+function populateFilters() {
+  const entries = allEntries();
+  const products = unique([...PRODUCTS, ...entries.map((e) => e.product)]);
+  const reses = unique(entries.map((e) => e.resolution)).sort(
+    (a, b) => parseFloat(a) - parseFloat(b)
+  );
+  const qualOrder = ["Low", "Medium", "High", "Extra High", "Ultra", "Max", "默认"];
+  const quals = unique(entries.map((e) => e.quality || "默认")).sort((a, b) => {
+    const ia = qualOrder.indexOf(a);
+    const ib = qualOrder.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+  const counts = unique(entries.map((e) => String(e.count || 1))).sort((a, b) => Number(a) - Number(b));
+  productFilter = "all";
+  resFilter = "all";
+  qualFilter = "all";
+  countFilter = "1";
+  fillModelSelect();
+  renderChipGroup(
+    $("fProduct"),
+    [["all", "全部"], ...products.map((p) => [p, p])],
+    (v) => (productFilter = productFilter === v ? "all" : v)
+  );
+  renderChipGroup(
+    $("fRes"),
+    [["all", "全部"], ...reses.map((r) => [r, r])],
+    (v) => (resFilter = resFilter === v ? "all" : v)
+  );
+  renderChipGroup(
+    $("fQual"),
+    [["all", "全部"], ...quals.map((q) => [q, q])],
+    (v) => (qualFilter = qualFilter === v ? "all" : v)
+  );
+  renderChipGroup($("fCount"), [["1", "1张"]], () => (countFilter = "1"));
+  updateChipStates();
+}
+
+function filteredEntries() {
+  const fModel = $("fModel").value;
+  return allEntries().filter(
+    (e) =>
+      (productFilter === "all" || e.product === productFilter) &&
+      (fModel === "all" || e.model === fModel) &&
+      (resFilter === "all" || e.resolution === resFilter) &&
+      (qualFilter === "all" || (e.quality || "默认") === qualFilter) &&
+      (countFilter === "all" ||
+        (countFilter === "__not1__"
+          ? String(e.count || 1) !== "1"
+          : String(e.count || 1) === countFilter))
+  );
+}
+
+function renderPagination(totalPages) {
+  const pg = $("pagination");
+  pg.style.display = "";
+  $("prevPage").disabled = currentPage <= 1;
+  $("nextPage").disabled = currentPage >= totalPages;
+  const nums = $("pageNums");
+  nums.innerHTML = "";
+  for (let i = 1; i <= totalPages; i++) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "page-num" + (i === currentPage ? " active" : "");
+    b.textContent = i;
+    b.addEventListener("click", () => {
+      currentPage = i;
+      renderPriceTable();
+    });
+    nums.appendChild(b);
+  }
+  $("pageInfo").textContent = `第 ${currentPage} / ${totalPages} 页`;
+}
+
+function applyFilterChange() {
+  fillModelSelect();
+  currentPage = 1;
+  renderPriceTable();
+}
+
+function renderPriceTable() {
+  const el = $("priceList");
+  const entries = filteredEntries();
+  const total = allEntries().length;
+  if (total === 0) {
+    el.innerHTML = '<div class="empty-tip">暂无积分数据，请点击上方"抓取积分"按钮</div>';
+    $("pagination").style.display = "none";
+    return;
+  }
+  if (entries.length === 0) {
+    const hasProductData =
+      productFilter === "all" || allEntries().some((e) => e.product === productFilter);
+    el.innerHTML = `<div class="empty-tip">${hasProductData ? "无匹配结果，请调整筛选条件" : "该产品暂无定价数据"}</div>`;
+    $("pagination").style.display = "none";
+    return;
+  }
+  const totalPages = Math.max(1, Math.ceil(entries.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  const pageEntries = entries.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  renderPagination(totalPages);
+  const rows = pageEntries
+    .map((e) => {
+      const errTag = e.modelError
+        ? `<span class="err-tag" title="${escapeHtml(e.modelError)}">失败</span>`
+        : "";
+      const orig = e.original ? `<s>${escapeHtml(e.original)}</s>` : "—";
+      const nameTitle = e.modelNote ? ` title="${escapeHtml(e.modelNote)}"` : "";
+      const priceTitle = e.note ? ` title="${escapeHtml(e.note)}"` : "";
+      return `<tr>
+        <td class="prod">${escapeHtml(e.product || "dreamina")}</td>
+        <td class="name"${nameTitle}>${escapeHtml(e.model)}${errTag}</td>
+        <td>${escapeHtml(e.resolution || "默认")}</td>
+        <td>${escapeHtml(e.quality || "默认")}</td>
+        <td>${escapeHtml(e.count || 1)}</td>
+        <td class="price"${priceTitle}>${escapeHtml(e.price ?? "?")}</td>
+        <td>${orig}</td>
+      </tr>`;
+    })
+    .join("");
+  el.innerHTML = `<table><thead><tr><th>产品</th><th>模型</th><th>分辨率</th><th>质量</th><th>张数</th><th>积分</th><th>原价</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function rerenderImagePrices() {
+  populateFilters();
+  currentPage = 1;
+  renderPriceTable();
+  renderStatusLine();
+}
+
+function renderPrices(payload) {
+  priceData = payload;
+  rerenderImagePrices();
+  const s = (payload && payload.settings) || {};
+  if (s.prompt) {
+    $("pricePrompt").style.display = "block";
+    $("pricePrompt").textContent = "提示词：" + s.prompt;
+  } else {
+    $("pricePrompt").style.display = "none";
+  }
+}
+
+function renderOiiPrices(payload) {
+  oiioiiData = payload;
+  rerenderImagePrices();
+}
+
+function renderKreaPrices(payload) {
+  kreaData = payload;
+  rerenderImagePrices();
+}
+
+async function loadPrices() {
+  if (window.__STATIC__) {
+    renderPrices(window.__STATIC__.prices);
+    renderOiiPrices(window.__STATIC__.oiioii || { exists: false });
+    renderKreaPrices(window.__STATIC__.krea || { exists: false });
+    return;
+  }
+  try {
+    const res = await fetch("/prices");
+    renderPrices(await res.json());
+  } catch {
+    renderPrices({ exists: false });
+  }
+  try {
+    const res = await fetch("/prices-oiioii");
+    renderOiiPrices(await res.json());
+  } catch {
+    renderOiiPrices({ exists: false });
+  }
+  try {
+    const res = await fetch("/prices-krea");
+    renderKreaPrices(await res.json());
+  } catch {
+    renderKreaPrices({ exists: false });
+  }
+}
+
+const REFRESH_STEPS = {
+  dreamina: {
+    url: "/refresh-prices",
+    statusText: "正在抓取 dreamina 各模型积分价格，请稍候（约 2-4 分钟）",
+    errPrefix: "dreamina 积分抓取失败：",
+    render: renderPrices,
+  },
+  oiioii: {
+    url: "/refresh-prices-oiioii",
+    statusText: "正在抓取 oiioii 各模型积分价格，请稍候（约 5 分钟）",
+    errPrefix: "oiioii 积分抓取失败：",
+    render: renderOiiPrices,
+  },
+  krea: {
+    url: "/refresh-prices-krea",
+    statusText: "正在抓取 krea 各模型积分价格，请稍候（约 8-10 分钟）",
+    errPrefix: "krea 积分抓取失败：",
+    render: renderKreaPrices,
+  },
+};
+
+async function doRefreshImage(target) {
+  const btn = $("refreshPrices");
+  const steps = target === "all" ? ["dreamina", "oiioii", "krea"] : [target];
+  btn.disabled = true;
+  btn.textContent = "抓取中…";
+  $("error").style.display = "none";
+  let ok = true;
+  for (const key of steps) {
+    const step = REFRESH_STEPS[key];
+    $("status").innerHTML = '<span class="spinner"></span>' + step.statusText;
+    try {
+      const res = await fetch(step.url, { method: "POST" });
+      const payload = await res.json();
+      if (!res.ok) {
+        showError(step.errPrefix + (payload.error || res.status));
+        ok = false;
+      } else {
+        step.render(payload);
+      }
+    } catch (err) {
+      showError(step.errPrefix + err);
+      ok = false;
+    }
+  }
+  btn.disabled = false;
+  btn.textContent = "抓取积分 ▾";
+  $("status").innerHTML = ok ? "抓取完成 ✓" : "抓取结束（有失败，见上方错误信息）";
+  if (ok) setTimeout(renderStatusLine, 1500);
+}
+
+// ---- 视频定价 ----
+let videoPriceData = null;
+let kreaVideoData = null;
+let liblibVideoData = null;
+let vProductFilter = "all";
+let vResFilter = "all";
+let vDurFilter = "all";
+let vCurrentPage = 1;
+
+function vFlattenEntries(models) {
+  return models.flatMap((m) => {
+    const es = (m.entries || []).map((e) => ({ model: m.name, modelError: m.error, product: "dreamina", ...e }));
+    return es.length > 0 || !m.error ? es : [...es, { model: m.name, modelError: m.error, product: "dreamina" }];
+  });
+}
+
+function flattenKreaVideoEntries(models) {
+  return (models || []).flatMap((m) => {
+    const es = (m.entries || []).map((e) => ({
+      model: m.name,
+      modelError: m.error,
+      product: "krea",
+      resolution: e.resolution || "默认",
+      duration: e.duration != null ? e.duration + "s" : null,
+      durationNote: e.durationNote || null,
+      price: e.credits == null ? "?" : (e.isEstimated ? "~" : "") + e.credits,
+      note: e.note || null,
+      source: e.source || null,
+    }));
+    return es.length > 0 || !m.error
+      ? es
+      : [...es, { model: m.name, modelError: m.error, product: "krea", price: "?" }];
+  });
+}
+
+function flattenLiblibVideoEntries(models) {
+  return (models || []).flatMap((m) => {
+    const errMsg = (m.errors && m.errors[0] && m.errors[0].msg) || m.error || null;
+    const es = (m.entries || []).map((e) => ({
+      model: m.displayName || m.model,
+      modelKey: m.model,
+      modelError: null,
+      product: "liblib",
+      resolution: e.resolution || "默认",
+      duration: e.duration != null ? e.duration + "s" : null,
+      quality: e.quality || null,
+      price: e.memberOnly ? "会员" : e.power,
+      note: [
+        e.memberOnly ? "会员专享档位，非会员无法使用" : null,
+        e.mode !== "text2video" ? "模式：" + e.mode : null,
+        e.mode !== "text2video" ? "（使用示例占位图）" : null,
+      ].filter(Boolean).join(" "),
+      source: "api",
+    }));
+    return es.length > 0 || !errMsg
+      ? es
+      : [...es, { model: m.displayName || m.model, modelKey: m.model, modelError: errMsg, product: "liblib", price: "?" }];
+  });
+}
+
+function vAllEntries() {
+  const a = videoPriceData && videoPriceData.exists ? vFlattenEntries(videoPriceData.models || []) : [];
+  const b = kreaVideoData && kreaVideoData.exists ? flattenKreaVideoEntries(kreaVideoData.models || []) : [];
+  const c = liblibVideoData && liblibVideoData.exists ? flattenLiblibVideoEntries(liblibVideoData.models || []) : [];
+  return [...a, ...b, ...c];
+}
+
+function vUpdateChipStates() {
+  document.querySelectorAll("#sec-pricesVideo .chip").forEach((c) => {
+    const g = c.closest(".chip-group").id;
+    const cur = g === "vfRes" ? vResFilter : g === "vfDur" ? vDurFilter : vProductFilter;
+    c.classList.toggle("active", c.dataset.value === cur);
+  });
+}
+
+function vRenderChipGroup(container, items, setVal) {
+  container.innerHTML = "";
+  for (const [v, t] of items) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip";
+    chip.dataset.value = v;
+    chip.textContent = t;
+    chip.addEventListener("click", () => {
+      setVal(v);
+      vUpdateChipStates();
+      vApplyFilterChange();
+    });
+    container.appendChild(chip);
+  }
+}
+
+function vFillModelSelect() {
+  const sel = $("vfModel");
+  const models = unique(
+    vAllEntries()
+      .filter((e) => vProductFilter === "all" || e.product === vProductFilter)
+      .map((e) => e.model)
+  );
+  const cur = sel.value;
+  sel.innerHTML = [["all", "全部模型"], ...models.map((m) => [m, m])]
+    .map(([v, t]) => `<option value="${escapeHtml(v)}">${escapeHtml(t)}</option>`)
+    .join("");
+  if (models.includes(cur)) sel.value = cur;
+}
+
+function vPopulateFilters() {
+  const entries = vAllEntries();
+  const products = unique([...VPRODUCTS, ...entries.map((e) => e.product)]);
+  const reses = unique(entries.map((e) => e.resolution || "默认")).sort(
+    (a, b) => (parseFloat(a) || 0) - (parseFloat(b) || 0)
+  );
+  const hasNoDur = entries.some((e) => !e.duration);
+  const durs = unique(entries.map((e) => e.duration).filter(Boolean)).sort(
+    (a, b) => (parseFloat(a) || 0) - (parseFloat(b) || 0)
+  );
+  vProductFilter = "all";
+  vResFilter = "all";
+  vDurFilter = "all";
+  vFillModelSelect();
+  vRenderChipGroup(
+    $("vfProduct"),
+    [["all", "全部"], ...products.map((p) => [p, p])],
+    (v) => (vProductFilter = vProductFilter === v ? "all" : v)
+  );
+  vRenderChipGroup(
+    $("vfRes"),
+    [["all", "全部"], ...reses.map((r) => [r, r])],
+    (v) => (vResFilter = vResFilter === v ? "all" : v)
+  );
+  vRenderChipGroup(
+    $("vfDur"),
+    [["all", "全部"], ...durs.map((d) => [d, d]), ...(hasNoDur ? [["__none__", "无"]] : [])],
+    (v) => (vDurFilter = vDurFilter === v ? "all" : v)
+  );
+  vUpdateChipStates();
+}
+
+function vFilteredEntries() {
+  const fModel = $("vfModel").value;
+  return vAllEntries().filter(
+    (e) =>
+      (vProductFilter === "all" || e.product === vProductFilter) &&
+      (fModel === "all" || e.model === fModel) &&
+      (vResFilter === "all" || (e.resolution || "默认") === vResFilter) &&
+      (vDurFilter === "all" ||
+        (vDurFilter === "__none__" ? !e.duration : e.duration === vDurFilter))
+  );
+}
+
+function vRenderPagination(totalPages) {
+  const pg = $("vPagination");
+  pg.style.display = "";
+  $("vPrevPage").disabled = vCurrentPage <= 1;
+  $("vNextPage").disabled = vCurrentPage >= totalPages;
+  const nums = $("vPageNums");
+  nums.innerHTML = "";
+  for (let i = 1; i <= totalPages; i++) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "page-num" + (i === vCurrentPage ? " active" : "");
+    b.textContent = i;
+    b.addEventListener("click", () => {
+      vCurrentPage = i;
+      vRenderPriceTable();
+    });
+    nums.appendChild(b);
+  }
+  $("vPageInfo").textContent = `第 ${vCurrentPage} / ${totalPages} 页`;
+}
+
+function vApplyFilterChange() {
+  vFillModelSelect();
+  vCurrentPage = 1;
+  vRenderPriceTable();
+}
+
+function vRenderPriceTable() {
+  const el = $("vPriceList");
+  const entries = vFilteredEntries();
+  const total = vAllEntries().length;
+  if (total === 0) {
+    el.innerHTML = '<div class="empty-tip">暂无视频积分数据，请点击上方"抓取积分"按钮</div>';
+    $("vPagination").style.display = "none";
+    return;
+  }
+  if (entries.length === 0) {
+    const hasProductData =
+      vProductFilter === "all" || vAllEntries().some((e) => e.product === vProductFilter);
+    el.innerHTML = `<div class="empty-tip">${hasProductData ? "无匹配结果，请调整筛选条件" : "该产品暂无定价数据"}</div>`;
+    $("vPagination").style.display = "none";
+    return;
+  }
+  const totalPages = Math.max(1, Math.ceil(entries.length / PAGE_SIZE));
+  if (vCurrentPage > totalPages) vCurrentPage = totalPages;
+  const pageEntries = entries.slice((vCurrentPage - 1) * PAGE_SIZE, vCurrentPage * PAGE_SIZE);
+  vRenderPagination(totalPages);
+  const rows = pageEntries
+    .map((e) => {
+      const errTag = e.modelError
+        ? `<span class="err-tag" title="${escapeHtml(e.modelError)}">失败</span>`
+        : "";
+      const orig = e.original ? `<s>${escapeHtml(e.original)}</s>` : "—";
+      const noteAttr = e.note ? ` title="${escapeHtml(e.note)}"` : "";
+      const durAttr = e.durationNote ? ` title="${escapeHtml(e.durationNote)}"` : "";
+      const srcMark = e.source && e.source !== "api" ? "*" : "";
+      return `<tr>
+        <td class="prod">${escapeHtml(e.product || "dreamina")}</td>
+        <td class="name">${escapeHtml(e.model)}${errTag}</td>
+        <td>${escapeHtml(e.resolution || "默认")}</td>
+        <td>${escapeHtml(e.quality || "—")}</td>
+        <td${durAttr}>${escapeHtml(e.duration || "无")}</td>
+        <td class="price"${noteAttr}>${escapeHtml(e.price ?? "?")}${srcMark}</td>
+        <td>${orig}</td>
+      </tr>`;
+    })
+    .join("");
+  el.innerHTML = `<table><thead><tr><th>产品</th><th>模型</th><th>分辨率</th><th>品质</th><th>时长</th><th>积分</th><th>原价</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function vRerenderVideo() {
+  vPopulateFilters();
+  vCurrentPage = 1;
+  vRenderPriceTable();
+  renderStatusLine();
+}
+
+function vRenderPrices(payload) {
+  videoPriceData = payload;
+  vRerenderVideo();
+  const s = (payload && payload.settings) || {};
+  if (s.prompt) {
+    $("vPricePrompt").style.display = "block";
+    $("vPricePrompt").textContent = "提示词：" + s.prompt;
+  } else {
+    $("vPricePrompt").style.display = "none";
+  }
+}
+
+function vRenderKreaVideoPrices(payload) {
+  kreaVideoData = payload;
+  vRerenderVideo();
+}
+
+function vRenderLiblibVideoPrices(payload) {
+  liblibVideoData = payload;
+  vRerenderVideo();
+}
+
+async function loadPricesVideo() {
+  if (window.__STATIC__) {
+    vRenderPrices(window.__STATIC__.pricesVideo);
+    vRenderKreaVideoPrices(window.__STATIC__.kreaVideo || { exists: false });
+    vRenderLiblibVideoPrices(window.__STATIC__.liblibVideo || { exists: false });
+    return;
+  }
+  try {
+    const res = await fetch("/prices-video");
+    vRenderPrices(await res.json());
+  } catch {
+    vRenderPrices({ exists: false });
+  }
+  try {
+    const res = await fetch("/prices-krea-video");
+    vRenderKreaVideoPrices(await res.json());
+  } catch {
+    vRenderKreaVideoPrices({ exists: false });
+  }
+  try {
+    const res = await fetch("/prices-liblib-video");
+    vRenderLiblibVideoPrices(await res.json());
+  } catch {
+    vRenderLiblibVideoPrices({ exists: false });
+  }
+}
+
+const VREFRESH_STEPS = {
+  dreamina: {
+    url: "/refresh-prices-video",
+    statusText: "正在抓取 dreamina 视频模型积分价格，请稍候（约 5-8 分钟）",
+    errPrefix: "dreamina 视频积分抓取失败：",
+    render: vRenderPrices,
+  },
+  kreaVideo: {
+    url: "/refresh-prices-krea-video",
+    statusText: "正在抓取 krea 视频模型积分价格，请稍候（约 2-4 分钟）",
+    errPrefix: "krea 视频积分抓取失败：",
+    render: vRenderKreaVideoPrices,
+  },
+  liblibVideo: {
+    url: "/refresh-prices-liblib-video",
+    statusText: "正在抓取 liblib 视频模型积分价格，请稍候（约 3-5 分钟）",
+    errPrefix: "liblib 视频积分抓取失败：",
+    render: vRenderLiblibVideoPrices,
+  },
+};
+
+async function doRefreshPricesVideo(target) {
+  const btn = $("refreshVideoPrices");
+  const steps = target === "all" ? ["dreamina", "kreaVideo", "liblibVideo"] : [target];
+  btn.disabled = true;
+  btn.textContent = "抓取中…";
+  $("error").style.display = "none";
+  let ok = true;
+  for (const key of steps) {
+    const step = VREFRESH_STEPS[key];
+    $("status").innerHTML = '<span class="spinner"></span>' + step.statusText;
+    try {
+      const res = await fetch(step.url, { method: "POST" });
+      const payload = await res.json();
+      if (!res.ok) {
+        showError(step.errPrefix + (payload.error || res.status));
+        ok = false;
+      } else {
+        step.render(payload);
+      }
+    } catch (err) {
+      showError(step.errPrefix + err);
+      ok = false;
+    }
+  }
+  btn.disabled = false;
+  btn.textContent = "抓取积分 ▾";
+  $("status").innerHTML = ok ? "抓取完成 ✓" : "抓取结束（有失败，见上方错误信息）";
+  if (ok) setTimeout(renderStatusLine, 1500);
+}
+
+// ---- 筛选事件 ----
+$("fModel").addEventListener("change", applyFilterChange);
+$("fReset").addEventListener("click", () => {
+  $("fModel").value = "all";
+  productFilter = "all";
+  resFilter = "all";
+  qualFilter = "all";
+  countFilter = "1";
+  updateChipStates();
+  applyFilterChange();
+});
+
+// ---- 分页 ----
+$("prevPage").addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    renderPriceTable();
+  }
+});
+$("nextPage").addEventListener("click", () => {
+  const totalPages = Math.max(1, Math.ceil(filteredEntries().length / PAGE_SIZE));
+  if (currentPage < totalPages) {
+    currentPage++;
+    renderPriceTable();
+  }
+});
+
+// ---- 视频筛选与分页事件 ----
+$("vfModel").addEventListener("change", vApplyFilterChange);
+$("vfReset").addEventListener("click", () => {
+  $("vfModel").value = "all";
+  vProductFilter = "all";
+  vResFilter = "all";
+  vDurFilter = "all";
+  vUpdateChipStates();
+  vApplyFilterChange();
+});
+$("vPrevPage").addEventListener("click", () => {
+  if (vCurrentPage > 1) {
+    vCurrentPage--;
+    vRenderPriceTable();
+  }
+});
+$("vNextPage").addEventListener("click", () => {
+  const totalPages = Math.max(1, Math.ceil(vFilteredEntries().length / PAGE_SIZE));
+  if (vCurrentPage < totalPages) {
+    vCurrentPage++;
+    vRenderPriceTable();
+  }
+});
+
+$("refresh").addEventListener("click", doRefresh);
+$("refreshPrices").addEventListener("click", (e) => {
+  e.stopPropagation();
+  $("refreshMenu").classList.toggle("open");
+});
+document.querySelectorAll("#refreshMenu .refresh-opt").forEach((b) => {
+  b.addEventListener("click", () => {
+    $("refreshMenu").classList.remove("open");
+    doRefreshImage(b.dataset.target);
+  });
+});
+document.addEventListener("click", (e) => {
+  if (!$("refreshMenu").contains(e.target)) $("refreshMenu").classList.remove("open");
+  if (!$("refreshVideoMenu").contains(e.target)) $("refreshVideoMenu").classList.remove("open");
+});
+$("refreshVideoPrices").addEventListener("click", (e) => {
+  e.stopPropagation();
+  $("refreshVideoMenu").classList.toggle("open");
+});
+document.querySelectorAll("#refreshVideoMenu .refresh-opt").forEach((b) => {
+  b.addEventListener("click", () => {
+    $("refreshVideoMenu").classList.remove("open");
+    doRefreshPricesVideo(b.dataset.target);
+  });
+});
+if (window.__STATIC__) {
+  $("refresh").style.display = "none";
+  document.querySelector(".refresh-wrap").style.display = "none";
+  $("refreshVideoWrap").style.display = "none";
+  const staticTag = document.createElement("span");
+  staticTag.className = "static-tag";
+  staticTag.textContent = "静态快照 · 生成于 " + new Date(window.__STATIC__.generatedAt).toLocaleString("zh-CN");
+  $("status").after(staticTag);
+}
+loadData();
+loadPrices();
+loadPricesVideo();
+</script>
+</body>
+</html>

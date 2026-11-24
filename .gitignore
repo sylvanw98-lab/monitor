@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel/
+*.log
+/dreamina-monitor.zip
+/tmp-*
+/static/index.html

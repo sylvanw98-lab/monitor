@@ -1,0 +1,509 @@
+{
+  "scrapedAt": "2026-11-23T03:16:33.475Z",
+  "platform": "krea",
+  "settings": {
+    "ratio": "1:1",
+    "count": 1,
+    "countNote": "张数 N = 积分 ×N（线性，最多 4 张）",
+    "creditNote": "积分为 computeUnits 向上取整；~ 为估算值（isEstimated=true）"
+  },
+  "models": [
+    {
+      "name": "Krea 3",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 0,
+          "computeUnits": 0,
+          "isEstimated": false,
+          "width": null,
+          "height": null,
+          "steps": 30,
+          "provider": "k3-edit"
+        },
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "thinking": "Fast",
+          "credits": 0,
+          "computeUnits": 0,
+          "isEstimated": false,
+          "width": null,
+          "height": null,
+          "steps": 30,
+          "provider": "k3-edit"
+        },
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "thinking": "High",
+          "credits": null,
+          "note": "未触发估算（可能免费或需参考图）"
+        },
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "thinking": "Ultra",
+          "credits": null,
+          "note": "未触发估算（可能免费或需参考图）"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "k3-edit"
+    },
+    {
+      "name": "Krea 2 Large",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 18,
+          "computeUnits": 18,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 42,
+          "provider": "k2-large"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "k2-large"
+    },
+    {
+      "name": "Krea 2 Medium",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 9,
+          "computeUnits": 9,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "k2"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "k2"
+    },
+    {
+      "name": "Krea 2 Turbo",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 2,
+          "computeUnits": 2,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "k2-medium-turbo"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "k2-medium-turbo"
+    },
+    {
+      "name": "Krea 1",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 6,
+          "computeUnits": 5.555555555555555,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "k1"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "1.2K",
+        "1.5K",
+        "4K"
+      ],
+      "note": "1K、1.2K、1.5K、4K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "k1"
+    },
+    {
+      "name": "Nano Banana 2 Lite",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 26,
+          "computeUnits": 25.185,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "nano-banana-flash-lite"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "nano-banana-flash-lite"
+    },
+    {
+      "name": "Flux 2 Mini",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 4,
+          "computeUnits": 3.888888888888889,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "flux2-klein4b"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "2K"
+      ],
+      "note": "1K、2K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "flux2-klein4b"
+    },
+    {
+      "name": "Recraft V4.1 Flash",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 6,
+          "computeUnits": 5.185,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "recraft-v4.1-flash"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "recraft-v4.1-flash"
+    },
+    {
+      "name": "Qwen Image Max",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 14,
+          "computeUnits": 13.398333333333333,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "qwen-2512"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "qwen-2512"
+    },
+    {
+      "name": "GPT Image 2.6 Sunburst",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 128,
+          "computeUnits": 127.22222222222223,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "gpt-image-2.6-sunburst"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "1K、2K、4K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "gpt-image-2.6-sunburst"
+    },
+    {
+      "name": "GPT Image 2.5 Sunburst",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 128,
+          "computeUnits": 127.22222222222223,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "gpt-image-2.5-sunburst"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "1K、2K、4K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "gpt-image-2.5-sunburst"
+    },
+    {
+      "name": "Flux.1 Dev",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 4,
+          "computeUnits": 3.3333333333333335,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "krea-flux"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "krea-flux"
+    },
+    {
+      "name": "Z-Image",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 4,
+          "computeUnits": 3.3494444444444444,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "z-image"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "z-image"
+    },
+    {
+      "name": "Flux 2 Max",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 71,
+          "computeUnits": 70.55555555555556,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "bfl-2-max"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "1.5K",
+        "2K"
+      ],
+      "note": "1K、1.5K、2K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "bfl-2-max"
+    },
+    {
+      "name": "Wan 2.2 Image",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 16,
+          "computeUnits": 15.972222222222221,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "wan22_t2i"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "1.2K",
+        "1.5K"
+      ],
+      "note": "1K、1.2K、1.5K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "wan22_t2i"
+    },
+    {
+      "name": "Qwen Image",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 9,
+          "computeUnits": 8.88888888888889,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "qwen"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "qwen"
+    },
+    {
+      "name": "Kling o1 Image",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 21,
+          "computeUnits": 20.740555555555556,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "kling_omni_image"
+        }
+      ],
+      "errors": [],
+      "skipped": [
+        "1K",
+        "2K"
+      ],
+      "note": "1K、2K 档在 UI 中为禁用状态（模型不支持），不可选",
+      "provider": "kling_omni_image"
+    },
+    {
+      "name": "Flux Kontext Dev",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 15,
+          "computeUnits": 14.815,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "krea-kontext"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "krea-kontext"
+    },
+    {
+      "name": "Flux Kontext Pro",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 30,
+          "computeUnits": 29.629444444444445,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "bfl-kontext"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "bfl-kontext"
+    },
+    {
+      "name": "Runway Gen-4 Image",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 45,
+          "computeUnits": 44.44444444444444,
+          "isEstimated": true,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "runway"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "runway"
+    },
+    {
+      "name": "Ideogram 3.0",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 45,
+          "computeUnits": 44.44444444444444,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "ideogram"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "ideogram"
+    },
+    {
+      "name": "Flux 1.1 Pro",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 30,
+          "computeUnits": 29.629444444444445,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "bfl"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "bfl"
+    },
+    {
+      "name": "Flux 1.1 Pro Ultra",
+      "entries": [
+        {
+          "resolution": "默认",
+          "quality": "默认",
+          "credits": 45,
+          "computeUnits": 44.44444444444444,
+          "isEstimated": false,
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "provider": "bfl-ultra"
+        }
+      ],
+      "errors": [],
+      "skipped": [],
+      "provider": "bfl-ultra"
+    }
+  ]
+}

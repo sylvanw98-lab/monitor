@@ -1,0 +1,2062 @@
+{
+  "scrapedAt": "2026-11-17T04:44:50.812Z",
+  "sources": [
+    {
+      "platform": "dreamina",
+      "image": [
+        {
+          "name": "Seedream 5.0 Pro",
+          "desc": "Optimized for cinematic & text-rich visuals"
+        },
+        {
+          "name": "GPT Image 2.5 Flare",
+          "desc": "Everyday generation and editing, made faster"
+        },
+        {
+          "name": "GPT Image 2.5 Sunburst",
+          "desc": "Sharper details and more precise editing"
+        },
+        {
+          "name": "GPT Image 2",
+          "desc": "True-to-life details, precise text rendering."
+        },
+        {
+          "name": "Nano Banana Pro",
+          "desc": "Generate more accurate, context-rich visuals."
+        },
+        {
+          "name": "Seedream 5.0 Flash",
+          "desc": "Balanced quality, faster, cheaper"
+        },
+        {
+          "name": "Seedream 4.6",
+          "desc": "Improved character consistency. Efficient on credits."
+        },
+        {
+          "name": "Seedream 4.5",
+          "desc": "Reliable character and style consistency for every prompt."
+        },
+        {
+          "name": "Seedream 4.1",
+          "desc": "More creative, better aesthetics, and always consistent characters."
+        },
+        {
+          "name": "Seedream 4.0",
+          "desc": "Supports multiple references and batch generation."
+        },
+        {
+          "name": "Seedream 3.0",
+          "desc": "Studio quality, precise text generation, native 2K resolution."
+        }
+      ],
+      "video": [
+        {
+          "name": "Dreamina Seedance 2.5 Draft",
+          "desc": "Creates 480p drafts to test ideas before committing more credits"
+        },
+        {
+          "name": "Dreamina Seedance 2.5",
+          "desc": "More realistic, longer videos, precise editing. Up to 50 references."
+        },
+        {
+          "name": "Dreamina Recreate",
+          "desc": "Motion transfer, object swap, and creative remix, up to 30s"
+        },
+        {
+          "name": "Dreamina Seedance 2.0 Mini",
+          "desc": "Most cost-effective, quicker results"
+        },
+        {
+          "name": "Dreamina Seedance 2.0 Fast",
+          "desc": "Fast generation, lower cost"
+        },
+        {
+          "name": "Dreamina Seedance 2.0",
+          "desc": "Most versatile, director-level control"
+        },
+        {
+          "name": "Dreamina Seedance 1.5 Pro",
+          "desc": "Generates videos with synced, natural sound."
+        },
+        {
+          "name": "Dreamina Seedance 1.0 Mini",
+          "desc": "Creates multiple scenes with one detailed prompt."
+        }
+      ]
+    },
+    {
+      "platform": "krea",
+      "image": [
+        {
+          "name": "Auto",
+          "desc": "Chooses the best model for your prompt & plan automatically."
+        },
+        {
+          "name": "Krea 2 Large",
+          "desc": "Best for expressive photorealism."
+        },
+        {
+          "name": "Krea 3",
+          "desc": "Generate and edit images with Krea 3."
+        },
+        {
+          "name": "Krea 2 Medium",
+          "desc": "Best for expressive illustrations."
+        },
+        {
+          "name": "Krea 2 Turbo",
+          "desc": "Fastest medium quality Krea 2 model."
+        },
+        {
+          "name": "Krea 1",
+          "desc": "Most creative model with LoRA's."
+        },
+        {
+          "name": "ChatGPT 2",
+          "desc": "Smart powerful model for editing."
+        },
+        {
+          "name": "GPT Image 2.6 Flare",
+          "desc": "GPT Image 2.6 with transparent background support."
+        },
+        {
+          "name": "GPT Image 2.5 Flare",
+          "desc": "GPT Image 2.5 with transparent background support."
+        },
+        {
+          "name": "Nano Banana Pro",
+          "desc": "World's most intelligent model."
+        },
+        {
+          "name": "Nano Banana 2",
+          "desc": "Cheaper quality version of Nano Banana."
+        },
+        {
+          "name": "Nano Banana 2.1",
+          "desc": "Google's latest image model. Pro-level quality at Flash speed."
+        },
+        {
+          "name": "Nano Banana 2 Lite",
+          "desc": "Fast Google image model."
+        },
+        {
+          "name": "Nano Banana",
+          "desc": "Most versatile intelligent model."
+        },
+        {
+          "name": "Flux 2 Klein",
+          "desc": "Fast lightweight Flux 2 model with reference image support"
+        },
+        {
+          "name": "Seedream 5 Lite",
+          "desc": "Medium quality model with reasoning and web search."
+        },
+        {
+          "name": "Seedream 5.5",
+          "desc": "Newest ByteDance model with sharper realism and consistent edits. (flag)"
+        },
+        {
+          "name": "Seedream 5 Pro",
+          "desc": "Highest quality model with precise editing control."
+        },
+        {
+          "name": "Luma UNI-1",
+          "desc": "Reasoning image model for prompt-faithful text to image."
+        },
+        {
+          "name": "Luma UNI-1 Max",
+          "desc": "Higher-quality UNI-1 for the most prompt-faithful results."
+        },
+        {
+          "name": "Ideogram 4.5",
+          "desc": "Generate images and make edits with up to five image references."
+        },
+        {
+          "name": "Ideogram 4.0",
+          "desc": "Open image model focused on design and text rendering."
+        },
+        {
+          "name": "Muse Image",
+          "desc": "Meta’s agentic image model — it reasons about the prompt, pulls references from "
+        },
+        {
+          "name": "Grok Imagine 2.0",
+          "desc": "xAI's image model with selectable quality and 2K output."
+        },
+        {
+          "name": "Recraft V4",
+          "desc": "Sharp, detailed images from Recraft with Standard and Pro modes."
+        },
+        {
+          "name": "Recraft V4.1 Flash",
+          "desc": "Recraft’s fast tier for raster art, illustration, and photography."
+        },
+        {
+          "name": "Qwen Image 3",
+          "desc": "Dense layouts with small, legible text."
+        },
+        {
+          "name": "Qwen Image 2.1",
+          "desc": "Transparent assets and identity-safe edits."
+        },
+        {
+          "name": "Qwen Image 2512",
+          "desc": "Affordable medium quality model."
+        },
+        {
+          "name": "ChatGPT 1.5",
+          "desc": "Very intelligent model. Best for logos."
+        },
+        {
+          "name": "GPT Image 2.6 Sunburst",
+          "desc": "GPT Image 2.6, optimized for speed."
+        },
+        {
+          "name": "GPT Image 2.5 Sunburst",
+          "desc": "GPT Image 2.5, optimized for speed."
+        },
+        {
+          "name": "Seedream 4",
+          "desc": "New high quality model for photorealism and text rendering"
+        },
+        {
+          "name": "Flux.1 Dev",
+          "desc": "Fast model. Best for LoRAs."
+        },
+        {
+          "name": "Seedream 4.5",
+          "desc": "Medium quality model for photorealism."
+        },
+        {
+          "name": "Z Image",
+          "desc": "Fastest model. Realistic, low diversity."
+        },
+        {
+          "name": "Flux 2",
+          "desc": "FLUX.2 dev with enhanced realism and native editing capabilities"
+        },
+        {
+          "name": "Flux 2 Pro",
+          "desc": "Medium quality model by Black Forest."
+        },
+        {
+          "name": "Flux 2 Flex",
+          "desc": "Medium quality model for rendering text."
+        },
+        {
+          "name": "Flux 3 Image",
+          "desc": "Precise composition and multi-reference editing by Black Forest Labs."
+        },
+        {
+          "name": "Flux 2 Max",
+          "desc": "Frontier model by Black Forest Labs."
+        },
+        {
+          "name": "Wan 2.2 Image",
+          "desc": "Slow cinematic model with realistic textures."
+        },
+        {
+          "name": "Qwen Image",
+          "desc": "Semi-realistic model with good prompt adherence."
+        },
+        {
+          "name": "Flux Kontext Dev",
+          "desc": "Frontier model designed for image editing, optimized for Krea"
+        },
+        {
+          "name": "Flux Kontext Pro",
+          "desc": "Frontier model designed for image editing"
+        },
+        {
+          "name": "Runway Gen-4 Image",
+          "desc": "Cinematic image model with references."
+        },
+        {
+          "name": "Kling Image 4.0",
+          "desc": "Up to 8K images from Kling with image references. (flag)"
+        },
+        {
+          "name": "Kling o1 Image",
+          "desc": "Frontier model for complex image references."
+        },
+        {
+          "name": "Ideogram 3.0",
+          "desc": "Highly aesthetic, general-purpose model."
+        },
+        {
+          "name": "Flux 1.1 Pro",
+          "desc": "Advanced yet efficent model from BFL."
+        },
+        {
+          "name": "Flux 1.1 Pro Ultra",
+          "desc": "BFL's highest quality text to image model."
+        }
+      ],
+      "video": [
+        {
+          "name": "Hailuo 2.3",
+          "desc": "Frontier model with dynamic motion."
+        },
+        {
+          "name": "Hailuo 2.3 Fast",
+          "desc": "Cheapest medium-quality model."
+        },
+        {
+          "name": "MiniMax H3",
+          "desc": "Frontier 2K model with references and frame animation."
+        },
+        {
+          "name": "MiniMax H3 Max",
+          "desc": "Post-trained H3 variant with stronger prompt adherence, better aesthetics, and i"
+        },
+        {
+          "name": "MiniMax H3 Max Turbo",
+          "desc": "Faster, cheaper H3 Max tier with the same prompt adherence, at 480p, 768p, or na"
+        },
+        {
+          "name": "LTX-2.5 Pro",
+          "desc": "Quality-optimized audio-video model from Lightricks."
+        },
+        {
+          "name": "LTX-2.5 Fast",
+          "desc": "Speed-optimized Lightricks model with 20s clips up to 4K."
+        },
+        {
+          "name": "LTX-2.3 22B",
+          "desc": "High-quality audio-video model from Lightricks."
+        },
+        {
+          "name": "Wan 2.1",
+          "desc": "Fastest low-quality model with LoRA."
+        },
+        {
+          "name": "Wan 2.2",
+          "desc": "Fast, lower-quality model from Alibaba."
+        },
+        {
+          "name": "Kling 3.0",
+          "desc": "Frontier model with audio and up to 15s."
+        },
+        {
+          "name": "Kling 4.0",
+          "desc": "Kling’s newest frontier model, up to 30s at 1080p."
+        },
+        {
+          "name": "Kling 4.0 Flash",
+          "desc": "Faster Kling 4.0 tier with up to 20s outputs at 720p."
+        },
+        {
+          "name": "Kling 3.0 Turbo",
+          "desc": "Fast text and image-to-video model with up to 15s outputs."
+        },
+        {
+          "name": "Runway Gen-4.5",
+          "desc": "Frontier model with native text-to-video."
+        },
+        {
+          "name": "Seedance 2.0",
+          "desc": "Flagship video model with native audio, references, and frame animation."
+        },
+        {
+          "name": "Seedance 2.0 Fast",
+          "desc": "Faster Seedance 2 with native audio, references, and frame animation."
+        },
+        {
+          "name": "Seedance 2.0 Mini",
+          "desc": "Cost-efficient Seedance 2 model for scalable video production."
+        },
+        {
+          "name": "Seedance 2.5",
+          "desc": "Most advanced Seedance with 30s clips, native audio, and up to 50 references."
+        },
+        {
+          "name": "Seedance 2.5 Flash",
+          "desc": "Faster, cheaper Seedance 2.5 with 30s clips and native audio. (flag)"
+        },
+        {
+          "name": "Veo 3.1 Lite",
+          "desc": "Faster, affordable Veo 3.1."
+        },
+        {
+          "name": "Gemini Omni Flash",
+          "desc": "Multimodal video with native audio."
+        },
+        {
+          "name": "Gemini Omni Flash 1.1",
+          "desc": "Multimodal video with native audio."
+        },
+        {
+          "name": "Gemini Omni Flash 1.2",
+          "desc": "Multimodal video with native audio, up to 4K."
+        },
+        {
+          "name": "Grok Imagine",
+          "desc": "Fast, high-quality video generation by xAI."
+        },
+        {
+          "name": "Grok Imagine 1.5",
+          "desc": "Text and image-to-video with native audio by xAI."
+        },
+        {
+          "name": "HappyHorse",
+          "desc": "Native audio and reference-guided generation."
+        },
+        {
+          "name": "FLUX 3 Max",
+          "desc": "FLUX 3 with stronger prompt adherence."
+        },
+        {
+          "name": "Flux 3 Video",
+          "desc": "Up to 20s with synchronized sound."
+        },
+        {
+          "name": "Flux Video Edit",
+          "desc": "Edit any clip with a text prompt."
+        },
+        {
+          "name": "Kling o1",
+          "desc": "Intelligent model that thinks before generating."
+        },
+        {
+          "name": "Kling o3",
+          "desc": "Advanced reasoning model with references."
+        },
+        {
+          "name": "Kling o3 Pro",
+          "desc": "Advanced reasoning model, high-quality 1080p."
+        },
+        {
+          "name": "Kling o3 Reference",
+          "desc": "Generate new shots preserving the cinematic style of a reference video."
+        },
+        {
+          "name": "Kling o3 Edit",
+          "desc": "Edit video content directly with text, image, and element references."
+        },
+        {
+          "name": "Wan 2.6",
+          "desc": "Medium-quality with multi-shot support."
+        },
+        {
+          "name": "Wan 3.0",
+          "desc": "Latest Wan with 30s clips, native audio, and image, video, and audio references."
+        },
+        {
+          "name": "Wan 3.0 Prime",
+          "desc": "Faster Wan 3.0 with 30s clips, native audio, and image, video, and audio referen"
+        },
+        {
+          "name": "LTX-2 19B",
+          "desc": "Affordable audio-video model from Lightricks."
+        },
+        {
+          "name": "Seedance 1.0 Pro Fast",
+          "desc": "Fast and cheap model. Up to 12 seconds."
+        },
+        {
+          "name": "Veo 3.1",
+          "desc": "Best video model. Highest quality with audio."
+        },
+        {
+          "name": "Veo 3.1 Fast",
+          "desc": "Faster, affordable Veo 3.1 with audio."
+        },
+        {
+          "name": "Wan 2.5",
+          "desc": "Latest medium quality model from Alibaba."
+        },
+        {
+          "name": "Kling 2.6",
+          "desc": "Frontier model with native audio."
+        },
+        {
+          "name": "Kling 2.5",
+          "desc": "Improved dynamics and style adaptation."
+        },
+        {
+          "name": "Kling 2.5 Turbo",
+          "desc": "Fluid motion and cinematic visuals."
+        },
+        {
+          "name": "Vidu Q2",
+          "desc": "High-quality with reference images."
+        },
+        {
+          "name": "Vidu Q3",
+          "desc": "New model excelling at anime."
+        },
+        {
+          "name": "Hailuo 02",
+          "desc": "Frontier model with dynamic motion."
+        },
+        {
+          "name": "Seedance 1.0 Pro",
+          "desc": "Fast, high-quality model from ByteDance."
+        },
+        {
+          "name": "Runway Gen-4 Video",
+          "desc": "Cinematic visuals, weaker structure."
+        },
+        {
+          "name": "Runway Gen-3",
+          "desc": "Old cinematic model, higher consistency."
+        },
+        {
+          "name": "Hailuo",
+          "desc": "High-quality model with camera control."
+        },
+        {
+          "name": "MiniMax 01-Live",
+          "desc": "High-quality model for animating people."
+        },
+        {
+          "name": "MiniMax H3 Max Recast",
+          "desc": "Recasts the people in a video from reference photos."
+        },
+        {
+          "name": "Kling 1.0 Pro",
+          "desc": "High control with 10s duration."
+        }
+      ]
+    },
+    {
+      "platform": "liblib",
+      "image": [
+        {
+          "name": "Seedream 5.0 Pro Layer",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 5.5 Layer",
+          "desc": ""
+        },
+        {
+          "name": "Topaz Wonder 4",
+          "desc": ""
+        },
+        {
+          "name": "Nebula Ultra",
+          "desc": "全能图片模型V2"
+        },
+        {
+          "name": "Flux 2 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Flux 2 Flex",
+          "desc": ""
+        },
+        {
+          "name": "Flux.1",
+          "desc": "基础算法F.1"
+        },
+        {
+          "name": "Nebula V2 Flash",
+          "desc": "全能图片模型V2-Flash"
+        },
+        {
+          "name": "Nebula V2.1",
+          "desc": "全能图片模型V2.1"
+        },
+        {
+          "name": "Genesis F.3",
+          "desc": ""
+        },
+        {
+          "name": "Nebula",
+          "desc": "全能图片模型"
+        },
+        {
+          "name": "Qwen Image",
+          "desc": ""
+        },
+        {
+          "name": "Qwen Image 3",
+          "desc": ""
+        },
+        {
+          "name": "Z-Image",
+          "desc": ""
+        },
+        {
+          "name": "Orbit 2 Image",
+          "desc": "艾克斯图片模型"
+        },
+        {
+          "name": "Lib Image",
+          "desc": ""
+        },
+        {
+          "name": "Director Image",
+          "desc": ""
+        },
+        {
+          "name": "Lib Image 2.5 S",
+          "desc": ""
+        },
+        {
+          "name": "Lib Image 2.5 F",
+          "desc": ""
+        },
+        {
+          "name": "Lib Image 2.6 A",
+          "desc": ""
+        },
+        {
+          "name": "Lib Image 2.6 S",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 4.0",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 4.6",
+          "desc": "dreamina 4.6"
+        },
+        {
+          "name": "Seedream 4.5",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 5.0",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 5.0 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Seedream 5.5",
+          "desc": ""
+        },
+        {
+          "name": "MiniMax H3 Image",
+          "desc": ""
+        },
+        {
+          "name": "MiniMax H3 Image HS",
+          "desc": ""
+        },
+        {
+          "name": "Midjourney V7",
+          "desc": ""
+        },
+        {
+          "name": "Midjourney V8.1",
+          "desc": ""
+        },
+        {
+          "name": "Midjourney V8.2",
+          "desc": ""
+        },
+        {
+          "name": "Midjourney Niji 7",
+          "desc": ""
+        },
+        {
+          "name": "Lib-prism",
+          "desc": ""
+        }
+      ],
+      "video": [
+        {
+          "name": "Kling O1",
+          "desc": "可灵O1"
+        },
+        {
+          "name": "Kling 3.0",
+          "desc": "可灵 3.0"
+        },
+        {
+          "name": "Kling 3.0 Omni",
+          "desc": "可灵 3.0 Omni"
+        },
+        {
+          "name": "Kling 3.0 Turbo",
+          "desc": "可灵 3.0 turbo"
+        },
+        {
+          "name": "Kling 4.0",
+          "desc": "可灵 4.0"
+        },
+        {
+          "name": "Kling 4.0 Flash",
+          "desc": "可灵 4.0 Flash"
+        },
+        {
+          "name": "Wan 2.6",
+          "desc": ""
+        },
+        {
+          "name": "Video 3.1 Rapid",
+          "desc": "全能视频模型3.1快速版"
+        },
+        {
+          "name": "Video 3.1 Lite",
+          "desc": ""
+        },
+        {
+          "name": "Video 3.1",
+          "desc": "全能视频模型3.1"
+        },
+        {
+          "name": "Seedance 1.5 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.0",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.0 Fast",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.0",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.0 Mini",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.5",
+          "desc": ""
+        },
+        {
+          "name": "Director Video",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 2.5 Draft",
+          "desc": "Seedance 2.5（样片模式）"
+        },
+        {
+          "name": "Seedance 2.5 Flash",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 1.0 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Happy Horse 1.0",
+          "desc": ""
+        },
+        {
+          "name": "Happy Horse 1.1",
+          "desc": ""
+        },
+        {
+          "name": "Seedance 1.0 Lite",
+          "desc": ""
+        },
+        {
+          "name": "Kling 2.6",
+          "desc": "可灵V2.6"
+        },
+        {
+          "name": "MJ Video",
+          "desc": ""
+        },
+        {
+          "name": "Hailuo 2.3 Fast",
+          "desc": ""
+        },
+        {
+          "name": "Hailuo 02",
+          "desc": ""
+        },
+        {
+          "name": "Hailuo 2.3",
+          "desc": ""
+        },
+        {
+          "name": "MiniMax H3",
+          "desc": ""
+        },
+        {
+          "name": "Gemini Omni Flash",
+          "desc": ""
+        },
+        {
+          "name": "MiniMax H3 Max",
+          "desc": ""
+        },
+        {
+          "name": "AutoTake",
+          "desc": ""
+        },
+        {
+          "name": "MiniMax H3 Highspeed",
+          "desc": ""
+        },
+        {
+          "name": "Vidu Q2",
+          "desc": ""
+        },
+        {
+          "name": "Vidu Q2 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Vidu Q2 Turbo",
+          "desc": ""
+        },
+        {
+          "name": "Vidu Q3 Pro",
+          "desc": ""
+        },
+        {
+          "name": "Vidu Q4",
+          "desc": ""
+        },
+        {
+          "name": "Kling 2.1",
+          "desc": "可灵 2.1"
+        },
+        {
+          "name": "Kling 2.5",
+          "desc": "可灵 2.5"
+        },
+        {
+          "name": "Wan 2.2",
+          "desc": ""
+        },
+        {
+          "name": "Wan 2.5",
+          "desc": ""
+        },
+        {
+          "name": "Wan 2.7",
+          "desc": ""
+        },
+        {
+          "name": "Wan 3.0",
+          "desc": ""
+        },
+        {
+          "name": "Wan 3.0 Prime",
+          "desc": ""
+        },
+        {
+          "name": "Pixverse V5.5",
+          "desc": ""
+        },
+        {
+          "name": "Pixverse V5",
+          "desc": ""
+        },
+        {
+          "name": "Video 3 Prime",
+          "desc": "全能视频模型3"
+        },
+        {
+          "name": "Video 3 Rapid",
+          "desc": "全能视频模型3快速版"
+        },
+        {
+          "name": "Scene 2",
+          "desc": "多镜头视频模型"
+        },
+        {
+          "name": "Scene 2 Ultra",
+          "desc": "多镜头视频模型Pro"
+        },
+        {
+          "name": "OmniHuman 1.5",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "platform": "oiioii",
+      "image": [],
+      "video": []
+    }
+  ],
+  "unified": {
+    "image": [
+      {
+        "name": "Auto",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Chooses the best model for your prompt & plan automatically."
+      },
+      {
+        "name": "Director Image",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Flux 1.1 Pro",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Advanced yet efficent model from BFL."
+      },
+      {
+        "name": "Flux 1.1 Pro Ultra",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "BFL's highest quality text to image model."
+      },
+      {
+        "name": "Flux 2",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "FLUX.2 dev with enhanced realism and native editing capabilities"
+      },
+      {
+        "name": "Flux 2 Flex",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Medium quality model for rendering text."
+      },
+      {
+        "name": "Flux 2 Max",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Frontier model by Black Forest Labs."
+      },
+      {
+        "name": "Flux 2 Mini",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fast lightweight Flux 2 model with reference image support"
+      },
+      {
+        "name": "Flux 2 Pro",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Medium quality model by Black Forest."
+      },
+      {
+        "name": "Flux 3 Image",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Precise composition and multi-reference editing by Black Forest Labs."
+      },
+      {
+        "name": "Flux Kontext Dev",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Frontier model designed for image editing, optimized for Krea"
+      },
+      {
+        "name": "Flux Kontext Pro",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Frontier model designed for image editing"
+      },
+      {
+        "name": "Flux.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "基础算法F.1"
+      },
+      {
+        "name": "Flux.1 Dev",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fast model. Best for LoRAs."
+      },
+      {
+        "name": "GPT Image 1.5",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Very intelligent model. Best for logos."
+      },
+      {
+        "name": "GPT Image 2",
+        "platforms": [
+          "dreamina",
+          "krea"
+        ],
+        "desc": "True-to-life details, precise text rendering."
+      },
+      {
+        "name": "GPT Image 2.5 Flare",
+        "platforms": [
+          "dreamina",
+          "krea"
+        ],
+        "desc": "Everyday generation and editing, made faster"
+      },
+      {
+        "name": "GPT Image 2.5 Sunburst",
+        "platforms": [
+          "dreamina",
+          "krea"
+        ],
+        "desc": "Sharper details and more precise editing"
+      },
+      {
+        "name": "GPT Image 2.6 Flare",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "GPT Image 2.6 with transparent background support."
+      },
+      {
+        "name": "GPT Image 2.6 Sunburst",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "GPT Image 2.6, optimized for speed."
+      },
+      {
+        "name": "Grok Imagine 2.0",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "xAI's image model with selectable quality and 2K output."
+      },
+      {
+        "name": "Ideogram 3.0",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Highly aesthetic, general-purpose model."
+      },
+      {
+        "name": "Ideogram 4.0",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Open image model focused on design and text rendering."
+      },
+      {
+        "name": "Ideogram 4.5",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Generate images and make edits with up to five image references."
+      },
+      {
+        "name": "Kling Image 4.0",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Up to 8K images from Kling with image references. (flag)"
+      },
+      {
+        "name": "Kling o1 Image",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Frontier model for complex image references."
+      },
+      {
+        "name": "Krea 1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Most creative model with LoRA's."
+      },
+      {
+        "name": "Krea 2 Large",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Best for expressive photorealism."
+      },
+      {
+        "name": "Krea 2 Medium",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Best for expressive illustrations."
+      },
+      {
+        "name": "Krea 2 Turbo",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fastest medium quality Krea 2 model."
+      },
+      {
+        "name": "Krea 3",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Generate and edit images with Krea 3."
+      },
+      {
+        "name": "Lib Image",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Lib Image 2.5 F",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Lib Image 2.5 S",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Lib Image 2.6 A",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Lib Image 2.6 S",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Lib-prism",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Luma UNI-1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Reasoning image model for prompt-faithful text to image."
+      },
+      {
+        "name": "Luma UNI-1 Max",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Higher-quality UNI-1 for the most prompt-faithful results."
+      },
+      {
+        "name": "Midjourney V7",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Midjourney V8.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Midjourney V8.2",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "MiniMax H3 Image",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "MiniMax H3 Image HS",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Muse Image",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Meta’s agentic image model — it reasons about the prompt, pulls references from "
+      },
+      {
+        "name": "Nano Banana",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Most versatile intelligent model."
+      },
+      {
+        "name": "Nano Banana 2",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Cheaper quality version of Nano Banana."
+      },
+      {
+        "name": "Nano Banana 2 Lite",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fast Google image model."
+      },
+      {
+        "name": "Nano Banana 2.1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Google's latest image model. Pro-level quality at Flash speed."
+      },
+      {
+        "name": "Nano Banana Pro",
+        "platforms": [
+          "dreamina",
+          "krea"
+        ],
+        "desc": "Generate more accurate, context-rich visuals."
+      },
+      {
+        "name": "Nebula",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能图片模型"
+      },
+      {
+        "name": "Nebula Ultra",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能图片模型V2"
+      },
+      {
+        "name": "Nebula V2 Flash",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能图片模型V2-Flash"
+      },
+      {
+        "name": "Nebula V2.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能图片模型V2.1"
+      },
+      {
+        "name": "Niji 7",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Orbit 2 Image",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "艾克斯图片模型"
+      },
+      {
+        "name": "Qwen Image",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Semi-realistic model with good prompt adherence."
+      },
+      {
+        "name": "Qwen Image 2.1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Transparent assets and identity-safe edits."
+      },
+      {
+        "name": "Qwen Image 3",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Dense layouts with small, legible text."
+      },
+      {
+        "name": "Qwen Image Max",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Affordable medium quality model."
+      },
+      {
+        "name": "Recraft V4",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Sharp, detailed images from Recraft with Standard and Pro modes."
+      },
+      {
+        "name": "Recraft V4.1 Flash",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Recraft’s fast tier for raster art, illustration, and photography."
+      },
+      {
+        "name": "Runway Gen-4 Image",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Cinematic image model with references."
+      },
+      {
+        "name": "Seedream 3.0",
+        "platforms": [
+          "dreamina"
+        ],
+        "desc": "Studio quality, precise text generation, native 2K resolution."
+      },
+      {
+        "name": "Seedream 4.0",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Supports multiple references and batch generation."
+      },
+      {
+        "name": "Seedream 4.1",
+        "platforms": [
+          "dreamina"
+        ],
+        "desc": "More creative, better aesthetics, and always consistent characters."
+      },
+      {
+        "name": "Seedream 4.5",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Reliable character and style consistency for every prompt."
+      },
+      {
+        "name": "Seedream 4.6",
+        "platforms": [
+          "dreamina",
+          "liblib"
+        ],
+        "desc": "Improved character consistency. Efficient on credits."
+      },
+      {
+        "name": "Seedream 5 Lite",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Medium quality model with reasoning and web search."
+      },
+      {
+        "name": "Seedream 5.0",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Seedream 5.0 Flash",
+        "platforms": [
+          "dreamina"
+        ],
+        "desc": "Balanced quality, faster, cheaper"
+      },
+      {
+        "name": "Seedream 5.0 Pro",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Optimized for cinematic & text-rich visuals"
+      },
+      {
+        "name": "Seedream 5.0 Pro Layer",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Seedream 5.5",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Newest ByteDance model with sharper realism and consistent edits. (flag)"
+      },
+      {
+        "name": "Seedream 5.5 Layer",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Topaz Wonder 4",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Wan 2.2 Image",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Slow cinematic model with realistic textures."
+      },
+      {
+        "name": "Z-Image",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Fastest model. Realistic, low diversity."
+      }
+    ],
+    "video": [
+      {
+        "name": "AutoTake",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Director Video",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "FLUX 3 Max",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "FLUX 3 with stronger prompt adherence."
+      },
+      {
+        "name": "Flux 3 Video",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Up to 20s with synchronized sound."
+      },
+      {
+        "name": "Flux Video Edit",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Edit any clip with a text prompt."
+      },
+      {
+        "name": "Gemini Omni Flash",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Multimodal video with native audio."
+      },
+      {
+        "name": "Gemini Omni Flash 1.1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Multimodal video with native audio."
+      },
+      {
+        "name": "Gemini Omni Flash 1.2",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Multimodal video with native audio, up to 4K."
+      },
+      {
+        "name": "Grok Imagine",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fast, high-quality video generation by xAI."
+      },
+      {
+        "name": "Grok Imagine 1.5",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Text and image-to-video with native audio by xAI."
+      },
+      {
+        "name": "Hailuo",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "High-quality model with camera control."
+      },
+      {
+        "name": "Hailuo 02",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Frontier model with dynamic motion."
+      },
+      {
+        "name": "Hailuo 2.3",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Frontier model with dynamic motion."
+      },
+      {
+        "name": "Hailuo 2.3 Fast",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Cheapest medium-quality model."
+      },
+      {
+        "name": "Happy Horse 1.0",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Native audio and reference-guided generation."
+      },
+      {
+        "name": "Happy Horse 1.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Kling 1.0 Pro",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "High control with 10s duration."
+      },
+      {
+        "name": "Kling 2.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "可灵 2.1"
+      },
+      {
+        "name": "Kling 2.5",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Improved dynamics and style adaptation."
+      },
+      {
+        "name": "Kling 2.5 Turbo",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fluid motion and cinematic visuals."
+      },
+      {
+        "name": "Kling 2.6",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Frontier model with native audio."
+      },
+      {
+        "name": "Kling 3.0",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Frontier model with audio and up to 15s."
+      },
+      {
+        "name": "Kling 3.0 Omni",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "可灵 3.0 Omni"
+      },
+      {
+        "name": "Kling 3.0 Turbo",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Fast text and image-to-video model with up to 15s outputs."
+      },
+      {
+        "name": "Kling 4.0",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Kling’s newest frontier model, up to 30s at 1080p."
+      },
+      {
+        "name": "Kling 4.0 Flash",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Faster Kling 4.0 tier with up to 20s outputs at 720p."
+      },
+      {
+        "name": "Kling O1",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Intelligent model that thinks before generating."
+      },
+      {
+        "name": "Kling o3",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Advanced reasoning model with references."
+      },
+      {
+        "name": "Kling o3 Edit",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Edit video content directly with text, image, and element references."
+      },
+      {
+        "name": "Kling o3 Pro",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Advanced reasoning model, high-quality 1080p."
+      },
+      {
+        "name": "Kling o3 Reference",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Generate new shots preserving the cinematic style of a reference video."
+      },
+      {
+        "name": "LTX-2 19B",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Affordable audio-video model from Lightricks."
+      },
+      {
+        "name": "LTX-2.3 22B",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "High-quality audio-video model from Lightricks."
+      },
+      {
+        "name": "LTX-2.5 Fast",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Speed-optimized Lightricks model with 20s clips up to 4K."
+      },
+      {
+        "name": "LTX-2.5 Pro",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Quality-optimized audio-video model from Lightricks."
+      },
+      {
+        "name": "MiniMax 01-Live",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "High-quality model for animating people."
+      },
+      {
+        "name": "MiniMax H3",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Frontier 2K model with references and frame animation."
+      },
+      {
+        "name": "MiniMax H3 Highspeed",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "MiniMax H3 Max",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Post-trained H3 variant with stronger prompt adherence, better aesthetics, and i"
+      },
+      {
+        "name": "MiniMax H3 Max Recast",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Recasts the people in a video from reference photos."
+      },
+      {
+        "name": "MiniMax H3 Max Turbo",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Faster, cheaper H3 Max tier with the same prompt adherence, at 480p, 768p, or na"
+      },
+      {
+        "name": "MJ Video",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "OmniHuman 1.5",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Pixverse V5",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Pixverse V5.5",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Recreate",
+        "platforms": [
+          "dreamina"
+        ],
+        "desc": "Motion transfer, object swap, and creative remix, up to 30s"
+      },
+      {
+        "name": "Runway Gen-3",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Old cinematic model, higher consistency."
+      },
+      {
+        "name": "Runway Gen-4 Video",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Cinematic visuals, weaker structure."
+      },
+      {
+        "name": "Runway Gen-4.5",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Frontier model with native text-to-video."
+      },
+      {
+        "name": "Scene 2",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "多镜头视频模型"
+      },
+      {
+        "name": "Scene 2 Ultra",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "多镜头视频模型Pro"
+      },
+      {
+        "name": "Seedance 1.0 Lite",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Seedance 1.0 Mini",
+        "platforms": [
+          "dreamina"
+        ],
+        "desc": "Creates multiple scenes with one detailed prompt."
+      },
+      {
+        "name": "Seedance 1.0 Pro",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Fast, high-quality model from ByteDance."
+      },
+      {
+        "name": "Seedance 1.0 Pro Fast",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fast and cheap model. Up to 12 seconds."
+      },
+      {
+        "name": "Seedance 1.5 Pro",
+        "platforms": [
+          "dreamina",
+          "liblib"
+        ],
+        "desc": "Generates videos with synced, natural sound."
+      },
+      {
+        "name": "Seedance 2.0",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Most versatile, director-level control"
+      },
+      {
+        "name": "Seedance 2.0 Fast",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Fast generation, lower cost"
+      },
+      {
+        "name": "Seedance 2.0 Mini",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "Most cost-effective, quicker results"
+      },
+      {
+        "name": "Seedance 2.5",
+        "platforms": [
+          "dreamina",
+          "krea",
+          "liblib"
+        ],
+        "desc": "More realistic, longer videos, precise editing. Up to 50 references."
+      },
+      {
+        "name": "Seedance 2.5 Draft",
+        "platforms": [
+          "dreamina",
+          "liblib"
+        ],
+        "desc": "Creates 480p drafts to test ideas before committing more credits"
+      },
+      {
+        "name": "Seedance 2.5 Flash",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Faster, cheaper Seedance 2.5 with 30s clips and native audio. (flag)"
+      },
+      {
+        "name": "Veo 3.1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Best video model. Highest quality with audio."
+      },
+      {
+        "name": "Veo 3.1 Fast",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Faster, affordable Veo 3.1 with audio."
+      },
+      {
+        "name": "Veo 3.1 Lite",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Faster, affordable Veo 3.1."
+      },
+      {
+        "name": "Video 3 Prime",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能视频模型3"
+      },
+      {
+        "name": "Video 3 Rapid",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能视频模型3快速版"
+      },
+      {
+        "name": "Video 3.1",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能视频模型3.1"
+      },
+      {
+        "name": "Video 3.1 Lite",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Video 3.1 Rapid",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": "全能视频模型3.1快速版"
+      },
+      {
+        "name": "Vidu Q2",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "High-quality with reference images."
+      },
+      {
+        "name": "Vidu Q2 Pro",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Vidu Q2 Turbo",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Vidu Q3",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "New model excelling at anime."
+      },
+      {
+        "name": "Vidu Q3 Pro",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Vidu Q4",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Wan 2.1",
+        "platforms": [
+          "krea"
+        ],
+        "desc": "Fastest low-quality model with LoRA."
+      },
+      {
+        "name": "Wan 2.2",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Fast, lower-quality model from Alibaba."
+      },
+      {
+        "name": "Wan 2.5",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Latest medium quality model from Alibaba."
+      },
+      {
+        "name": "Wan 2.6",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Medium-quality with multi-shot support."
+      },
+      {
+        "name": "Wan 2.7",
+        "platforms": [
+          "liblib"
+        ],
+        "desc": ""
+      },
+      {
+        "name": "Wan 3.0",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Latest Wan with 30s clips, native audio, and image, video, and audio references."
+      },
+      {
+        "name": "Wan 3.0 Prime",
+        "platforms": [
+          "krea",
+          "liblib"
+        ],
+        "desc": "Faster Wan 3.0 with 30s clips, native audio, and image, video, and audio referen"
+      }
+    ]
+  }
+}

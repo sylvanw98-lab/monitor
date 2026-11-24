@@ -1,0 +1,1746 @@
+{
+  "product": "liblib",
+  "collectedAt": "2026-11-19T04:01:00.228Z",
+  "settings": {
+    "ratio": "16:9",
+    "modeNote": "优先文生视频（text2video）；无文生视频的模型按其首个可用模式采集（图生视频等，使用示例占位图）",
+    "durationNote": "每模型两档时长：短档 4s（无则 5s，再无则最短）；长档 30s（无则最长）",
+    "resolutionNote": "分辨率/画质按官网展示名记录（如 std→720P、low→标准），接口提交仍用原始值；无分辨率档位的模型：仅自适应一档的记自适应；无分辨率维度的显示为默认",
+    "priceNote": "积分为单次生成算力（power/calculator 直查）；时长按秒线性计费；比例不影响价格；同价档位已合并显示；会员专享档位显示为「会员」"
+  },
+  "totalReqs": 231,
+  "failedReqs": 0,
+  "models": [
+    {
+      "model": "kling-video-o1",
+      "displayName": "Kling O1",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "自适应",
+          "power": 35,
+          "quality": "标准/高品质"
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "自适应",
+          "power": 70,
+          "quality": "标准/高品质"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-video-o3",
+      "displayName": "Kling 3.0",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "标准",
+          "power": 55
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "高品质",
+          "power": 70
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "4K",
+          "power": 210
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "标准",
+          "power": 165
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "高品质",
+          "power": 210
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "4K",
+          "power": 630
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v3-omni",
+      "displayName": "Kling 3.0 Omni",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "quality": "标准",
+          "power": 44
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "quality": "高品质",
+          "power": 56
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "quality": "4K",
+          "power": 168
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "标准",
+          "power": 165
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "高品质",
+          "power": 210
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "quality": "4K",
+          "power": 630
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v3-turbo",
+      "displayName": "Kling 3.0 Turbo",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 48
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 56
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 180
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "1080P",
+          "power": 210
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v4",
+      "displayName": "Kling 4.0",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 88
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "720P",
+          "power": 660
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "1080P",
+          "power": 960
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v4-flash",
+      "displayName": "Kling 4.0 Flash",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 52
+        },
+        {
+          "mode": "text2video",
+          "duration": 20,
+          "resolution": "720P",
+          "power": 260
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanxiang-v2-6",
+      "displayName": "Wan 2.6",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": null,
+          "memberOnly": true
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "720P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": null,
+          "memberOnly": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "motion-3.1-rapid",
+      "displayName": "Video 3.1 Rapid",
+      "vendor": "motion",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "4K",
+          "power": 288
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "motion-3.1-lite",
+      "displayName": "Video 3.1 Lite",
+      "vendor": "motion",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 72
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 120
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "motion-3.1",
+      "displayName": "Video 3.1",
+      "vendor": "motion",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 168
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 168
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "4K",
+          "power": 248
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 336
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 336
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "4K",
+          "power": 496
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "seedance-1.5-pro",
+      "displayName": "Seedance 1.5 Pro",
+      "vendor": "Seedance",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "480P",
+          "power": 20
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": 90
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "480P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "720P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 180
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2",
+      "displayName": "Seedance 2.0",
+      "vendor": "star-video2",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 52
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 108
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 272
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "4K",
+          "power": 560
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "480P",
+          "power": 195
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 405
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "1080P",
+          "power": 1020
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "4K",
+          "power": 2100
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2-fast",
+      "displayName": "Seedance 2.0 Fast",
+      "vendor": "star-video2-fast",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 40
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 88
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "480P",
+          "power": 150
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 330
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "seedance2.0",
+      "displayName": "Seedance 2.0",
+      "vendor": "seedance2.0",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "480P/720P",
+          "power": 60
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "480P/720P",
+          "power": 225
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2-mini",
+      "displayName": "Seedance 2.0 Mini",
+      "vendor": "star-video2",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 32
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 64
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "480P",
+          "power": 120
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 240
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2.5",
+      "displayName": "Seedance 2.5",
+      "vendor": "star-video2.5",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 184
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 440
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "4K",
+          "power": 720
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P",
+          "power": 600
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "720P",
+          "power": 1380
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "1080P",
+          "power": 3300
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "4K",
+          "power": 5400
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "director-video",
+      "displayName": "Director Video",
+      "vendor": "director-video",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P/720P/1080P",
+          "power": 60
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P/720P/1080P",
+          "power": 450
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2.5-draft",
+      "displayName": "Seedance 2.5 Draft",
+      "vendor": "star-video2.5",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P",
+          "power": 600
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "star-video2.5-flash",
+      "displayName": "Seedance 2.5 Flash",
+      "vendor": "star-video2.5",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 52
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 112
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P",
+          "power": 390
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "720P",
+          "power": 840
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "doubao-seedance-pro",
+      "displayName": "Seedance 1.0 Pro",
+      "vendor": "Seedance",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 5,
+          "resolution": "480P/720P/1080P",
+          "power": 75
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "480P/720P/1080P",
+          "power": 150
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "happy-horse-1",
+      "displayName": "Happy Horse 1.0",
+      "vendor": "happy-horse",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 64
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 240
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "1080P",
+          "power": 480
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "happy-horse-1.1",
+      "displayName": "Happy Horse 1.1",
+      "vendor": "happy-horse",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 60
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 225
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "1080P",
+          "power": 300
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "doubao-seedance-lite",
+      "displayName": "Seedance 1.0 Lite",
+      "vendor": "Seedance",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 5,
+          "resolution": "480P/720P/1080P",
+          "power": 30
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "480P/720P/1080P",
+          "power": 60
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v2-6",
+      "displayName": "Kling 2.6",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "标准",
+          "power": 50
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "高品质模式",
+          "power": 75
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "quality": "标准",
+          "power": 100
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "quality": "高品质模式",
+          "power": 150
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "midjourney-video",
+      "displayName": "MJ Video",
+      "vendor": "midjourney",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "resolution": "480P",
+          "power": 60
+        },
+        {
+          "mode": "text2video",
+          "resolution": "720P",
+          "power": 180
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "MiniMax-Hailuo-2.3-Fast",
+      "displayName": "Hailuo 2.3 Fast",
+      "vendor": "MiniMax",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 6,
+          "resolution": "768P",
+          "power": 12
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 6,
+          "resolution": "1080P",
+          "power": 24
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "768P",
+          "power": 20
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 40
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "MiniMax-Hailuo-o2",
+      "displayName": "Hailuo 02",
+      "vendor": "MiniMax",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 6,
+          "resolution": "768P",
+          "power": 24
+        },
+        {
+          "mode": "text2video",
+          "duration": 6,
+          "resolution": "1080P",
+          "power": 36
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "768P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 60
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "MiniMax-Hailuo-2.3",
+      "displayName": "Hailuo 2.3",
+      "vendor": "MiniMax",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 6,
+          "resolution": "768P",
+          "power": 24
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 6,
+          "resolution": "1080P",
+          "power": 36
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "768P",
+          "power": 40
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 60
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "MiniMax-Hailuo-H3",
+      "displayName": "MiniMax H3",
+      "vendor": "MiniMax",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "768P",
+          "power": 70
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "2K",
+          "power": 110
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "768P",
+          "power": 210
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "2K",
+          "power": 330
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "gemini-omni-flash",
+      "displayName": "Gemini Omni Flash",
+      "vendor": "Google",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "768P/2K",
+          "power": 1
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "768P/2K",
+          "power": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "MiniMax-Hailuo-H3-Max",
+      "displayName": "MiniMax H3 Max",
+      "vendor": "MiniMax",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "480P",
+          "power": 60
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "768P",
+          "power": 90
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "480P",
+          "power": 180
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "768P",
+          "power": 270
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "lib-cinema",
+      "displayName": "AutoTake",
+      "vendor": "Lib",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "480P",
+          "power": 10
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 10
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": 15
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "480P",
+          "power": 30
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "720P",
+          "power": 30
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "1080P",
+          "power": 45
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "minimax-h3-hs",
+      "displayName": "MiniMax H3 Highspeed",
+      "vendor": "MiniMax",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "768P",
+          "power": 28
+        },
+        {
+          "mode": "text2video",
+          "duration": 15,
+          "resolution": "768P",
+          "power": 105
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "viduq2",
+      "displayName": "Vidu Q2",
+      "vendor": "vidu",
+      "mode": "image2video",
+      "entries": [
+        {
+          "mode": "image2video",
+          "duration": 4,
+          "resolution": "540P",
+          "power": 20
+        },
+        {
+          "mode": "image2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 32
+        },
+        {
+          "mode": "image2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 40
+        },
+        {
+          "mode": "image2video",
+          "duration": 8,
+          "resolution": "540P",
+          "power": 40
+        },
+        {
+          "mode": "image2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 64
+        },
+        {
+          "mode": "image2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 80
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "viduq2-pro",
+      "displayName": "Vidu Q2 Pro",
+      "vendor": "vidu",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 32
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 88
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 64
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 176
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "viduq2-turbo",
+      "displayName": "Vidu Q2 Turbo",
+      "vendor": "vidu",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 16
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 64
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 32
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 128
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "viduq3-pro",
+      "displayName": "Vidu Q3 Pro",
+      "vendor": "vidu",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "540P",
+          "power": 20
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 112
+        },
+        {
+          "mode": "text2video",
+          "duration": 16,
+          "resolution": "540P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 16,
+          "resolution": "720P",
+          "power": 160
+        },
+        {
+          "mode": "text2video",
+          "duration": 16,
+          "resolution": "1080P",
+          "power": 448
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "vidu-q4",
+      "displayName": "Vidu Q4",
+      "vendor": "vidu",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "540P",
+          "power": 20
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 60
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "2K",
+          "power": 80
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "4K",
+          "power": 160
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 16,
+          "resolution": "540P",
+          "power": 80
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 16,
+          "resolution": "720P",
+          "power": 160
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 16,
+          "resolution": "1080P",
+          "power": 240
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 16,
+          "resolution": "2K",
+          "power": 320
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 16,
+          "resolution": "4K",
+          "power": 640
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-2.1",
+      "displayName": "Kling 2.1",
+      "vendor": "Kling",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 5,
+          "quality": "标准",
+          "power": 20
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 5,
+          "quality": "高品质",
+          "power": 35
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "quality": "标准",
+          "power": 40
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 10,
+          "quality": "高品质",
+          "power": 70
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "kling-v2-5-turbo-pro",
+      "displayName": "Kling 2.5",
+      "vendor": "Kling",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "标准",
+          "power": 15
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "quality": "高品质",
+          "power": 25
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "quality": "标准",
+          "power": 30
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "quality": "高品质",
+          "power": 50
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanxiang-plus",
+      "displayName": "Wan 2.2",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "480P",
+          "power": 20
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 40
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanxiang-preview",
+      "displayName": "Wan 2.5",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "480P",
+          "power": 20
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": 65
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "480P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "720P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 130
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanx2.7-video",
+      "displayName": "Wan 2.7",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 32
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 52
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "720P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": 130
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanx3.0",
+      "displayName": "Wan 3.0",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 20
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 80
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P",
+          "power": 150
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "720P",
+          "power": 300
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "1080P",
+          "power": 600
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "wanx3.0-prime",
+      "displayName": "Wan 3.0 Prime",
+      "vendor": "Wan",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "480P",
+          "power": 36
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 72
+        },
+        {
+          "mode": "text2video",
+          "duration": 4,
+          "resolution": "1080P",
+          "power": 144
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "480P",
+          "power": 270
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "720P",
+          "power": 540
+        },
+        {
+          "mode": "text2video",
+          "duration": 30,
+          "resolution": "1080P",
+          "power": 1080
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "pixverse-v5.5",
+      "displayName": "Pixverse V5.5",
+      "vendor": "Pixverse",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "540P",
+          "power": 50
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 60
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": null,
+          "memberOnly": true
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "540P",
+          "power": 100
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "720P",
+          "power": 120
+        },
+        {
+          "mode": "text2video",
+          "duration": 10,
+          "resolution": "1080P",
+          "power": null,
+          "memberOnly": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "pixverse-v5",
+      "displayName": "Pixverse V5",
+      "vendor": "Pixverse",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "540P",
+          "power": 40
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "720P",
+          "power": 45
+        },
+        {
+          "mode": "text2video",
+          "duration": 5,
+          "resolution": "1080P",
+          "power": 90
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "540P",
+          "power": 64
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 72
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 144
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "motion-3-prime",
+      "displayName": "Video 3 Prime",
+      "vendor": "motion",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 8,
+          "resolution": "720P/1080P",
+          "power": 336
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "motion-3-rapid",
+      "displayName": "Video 3 Rapid",
+      "vendor": "motion",
+      "mode": "text2video",
+      "entries": [
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "720P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "1080P",
+          "power": 128
+        },
+        {
+          "mode": "text2video",
+          "duration": 8,
+          "resolution": "4K",
+          "power": 288
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "scene-2",
+      "displayName": "Scene 2",
+      "vendor": "scene",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P",
+          "power": 40
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 12,
+          "resolution": "720P",
+          "power": 120
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "scene-2-ultra",
+      "displayName": "Scene 2 Ultra",
+      "vendor": "scene",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "duration": 4,
+          "resolution": "720P/1080P",
+          "power": 192
+        },
+        {
+          "mode": "singleImage2video",
+          "duration": 12,
+          "resolution": "720P/1080P",
+          "power": 576
+        }
+      ],
+      "errors": []
+    },
+    {
+      "model": "omnihuman-1.5",
+      "displayName": "OmniHuman 1.5",
+      "vendor": "omnihuman",
+      "mode": "singleImage2video",
+      "entries": [
+        {
+          "mode": "singleImage2video",
+          "resolution": "自适应",
+          "power": 14
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,1731 @@
+{
+  "models": [
+    {
+      "name": "Hailuo 2.3",
+      "provider": "minimax_hailuo23",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        6,
+        10
+      ],
+      "defaultResolutionLabel": "768p",
+      "entries": [
+        {
+          "duration": 6,
+          "durationNote": "无 4s/5s 档，取最短 6s",
+          "resolution": "768P",
+          "credits": 208,
+          "computeUnits": 207.40722222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Hailuo 2.3 Fast",
+      "provider": "minimax_hailuo23_fast",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        6,
+        10
+      ],
+      "defaultResolutionLabel": "768p",
+      "entries": [
+        {
+          "duration": 6,
+          "durationNote": "无 4s/5s 档，取最短 6s",
+          "resolution": "768P",
+          "credits": 141,
+          "computeUnits": 140.74055555555555,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "MiniMax H3",
+      "provider": "minimax_hailuo3",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 482,
+          "computeUnits": 481.4816666666667,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "MiniMax H3 Max",
+      "provider": "minimax_h3max",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "768p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "768P",
+          "credits": 223,
+          "computeUnits": 222.22222222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "MiniMax H3 Max Turbo",
+      "provider": "minimax_h3max_turbo",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "768p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "768P",
+          "credits": 112,
+          "computeUnits": 111.11111111111111,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "LTX-2.5 Pro",
+      "provider": "ltx-25-pro",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        6,
+        8,
+        10
+      ],
+      "defaultResolutionLabel": "1080p",
+      "entries": [
+        {
+          "duration": 6,
+          "durationNote": "无 4s/5s 档，取最短 6s",
+          "resolution": "1080P",
+          "credits": 756,
+          "computeUnits": 755.5555555555555,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "LTX-2.5 Fast",
+      "provider": "ltx-25-fast",
+      "inDropdown": true,
+      "maxDuration": 20,
+      "supportedDurations": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 6,
+          "durationNote": "无 4s/5s 档，取最短 6s",
+          "resolution": "720P",
+          "credits": 400,
+          "computeUnits": 400,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "LTX-2.3 22B",
+      "provider": "ltx-23-22b",
+      "inDropdown": true,
+      "maxDuration": 20,
+      "supportedDurations": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 134,
+          "computeUnits": 133.15555555555557,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 2.1",
+      "provider": "wan",
+      "inDropdown": true,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "模型无时长档位，按接口默认",
+          "resolution": "默认",
+          "credits": 256,
+          "computeUnits": 255.55555555555554,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 2.2",
+      "provider": "wan22",
+      "inDropdown": true,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "模型无时长档位，按接口默认",
+          "resolution": "默认",
+          "credits": 223,
+          "computeUnits": 222.22222222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 3.0",
+      "provider": "kling_30",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 4.0",
+      "provider": "kling_4",
+      "inDropdown": true,
+      "maxDuration": 30,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "defaultResolutionLabel": "1080p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "1080P",
+          "credits": 697,
+          "computeUnits": 696.2961111111111,
+          "isEstimated": false,
+          "source": "api"
+        },
+        {
+          "duration": 30,
+          "durationNote": null,
+          "resolution": "1080P",
+          "credits": 5223,
+          "computeUnits": 5222.222222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 4.0 Flash",
+      "provider": "kling_4_flash",
+      "inDropdown": true,
+      "maxDuration": 20,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 279,
+          "computeUnits": 278.5183333333333,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 3.0 Turbo",
+      "provider": "kling_30_turbo",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 332,
+          "computeUnits": 331.8516666666667,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Runway Gen-4.5",
+      "provider": "runwaygen45",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": 356,
+          "computeUnits": 355.55555555555554,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 2.0",
+      "provider": "seedance-2",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 448,
+          "computeUnits": 448,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 2.0 Fast",
+      "provider": "seedance-2-fast",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 359,
+          "computeUnits": 358.4,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 2.0 Mini",
+      "provider": "seedance-2-mini",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 224,
+          "computeUnits": 224,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 2.5",
+      "provider": "seedance-2-5",
+      "inDropdown": true,
+      "maxDuration": 30,
+      "supportedDurations": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 665,
+          "computeUnits": 664.2561111111111,
+          "isEstimated": true,
+          "source": "api"
+        },
+        {
+          "duration": 30,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 4982,
+          "computeUnits": 4981.92,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 2.5 Flash",
+      "provider": "seedance-2-5-flash",
+      "inDropdown": true,
+      "maxDuration": 30,
+      "supportedDurations": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 448,
+          "computeUnits": 448,
+          "isEstimated": false,
+          "source": "api"
+        },
+        {
+          "duration": 30,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 3360,
+          "computeUnits": 3360,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Veo 3.1 Lite",
+      "provider": "veo31-lite",
+      "inDropdown": true,
+      "maxDuration": 8,
+      "supportedDurations": [
+        4,
+        6,
+        8
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 89,
+          "computeUnits": 88.88888888888889,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Gemini Omni Flash",
+      "provider": "gemini-omni-flash",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": 386,
+          "computeUnits": 385.185,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Gemini Omni Flash 1.1",
+      "provider": "gemini-omni-flash-1.1",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": 386,
+          "computeUnits": 385.185,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Gemini Omni Flash 1.2",
+      "provider": "gemini-omni-flash-1.2",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 208,
+          "computeUnits": 207.40722222222223,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Grok Imagine",
+      "provider": "grok",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 208,
+          "computeUnits": 207.40722222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Grok Imagine 1.5",
+      "provider": "grok-15",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 415,
+          "computeUnits": 414.815,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "HappyHorse",
+      "provider": "happy-horse",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 415,
+          "computeUnits": 414.815,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "FLUX 3 Max",
+      "provider": "flux-3-max",
+      "inDropdown": true,
+      "maxDuration": 20,
+      "supportedDurations": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "720P",
+          "credits": 630,
+          "computeUnits": 629.6294444444444,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Flux 3 Video",
+      "provider": "flux-3-video",
+      "inDropdown": true,
+      "maxDuration": 20,
+      "supportedDurations": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "720P",
+          "credits": 630,
+          "computeUnits": 629.6294444444444,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Flux Video Edit",
+      "provider": "flux-video-edit",
+      "inDropdown": true,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "模型无时长档位，按接口默认",
+          "resolution": "默认",
+          "credits": 112,
+          "computeUnits": 111.11111111111111,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling o1",
+      "provider": "kling_omni",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 415,
+          "computeUnits": 414.815,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling o3",
+      "provider": "kling_o3",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling o3 Pro",
+      "provider": "kling_o3_pro",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling o3 Reference",
+      "provider": "kling_o3_v2v_ref",
+      "inDropdown": false,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": 498,
+          "computeUnits": 497.77777777777777,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling o3 Edit",
+      "provider": "kling_o3_v2v_edit",
+      "inDropdown": false,
+      "maxDuration": 15,
+      "supportedDurations": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "默认",
+          "credits": 498,
+          "computeUnits": 497.77777777777777,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 2.6",
+      "provider": "wan26",
+      "inDropdown": true,
+      "maxDuration": 15,
+      "supportedDurations": [
+        5,
+        10,
+        15
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "720P",
+          "credits": 371,
+          "computeUnits": 370.37055555555554,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 3.0",
+      "provider": "wan30",
+      "inDropdown": true,
+      "maxDuration": 30,
+      "supportedDurations": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 445,
+          "computeUnits": 444.44444444444446,
+          "isEstimated": false,
+          "source": "api"
+        },
+        {
+          "duration": 30,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 3334,
+          "computeUnits": 3333.3333333333335,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 3.0 Prime",
+      "provider": "wan30_prime",
+      "inDropdown": true,
+      "maxDuration": 30,
+      "supportedDurations": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 415,
+          "computeUnits": 414.815,
+          "isEstimated": false,
+          "source": "api"
+        },
+        {
+          "duration": 30,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 3112,
+          "computeUnits": 3111.1111111111113,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "LTX-2 19B",
+      "provider": "ltx-2-19b",
+      "inDropdown": true,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        8,
+        10
+      ],
+      "defaultResolutionLabel": "512p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "512P",
+          "credits": 34,
+          "computeUnits": 33.77777777777778,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 1.0 Pro Fast",
+      "provider": "seedance-1-0-pro-fast",
+      "inDropdown": false,
+      "maxDuration": 12,
+      "supportedDurations": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 67,
+          "computeUnits": 66.98555555555555,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Veo 3.1",
+      "provider": "veo31",
+      "inDropdown": true,
+      "maxDuration": 8,
+      "supportedDurations": [
+        4,
+        6,
+        8
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P/1080P",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Veo 3.1 Fast",
+      "provider": "veo31-fast",
+      "inDropdown": false,
+      "maxDuration": 8,
+      "supportedDurations": [
+        4,
+        6,
+        8
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P/1080P",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Wan 2.5",
+      "provider": "wan25",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "720P",
+          "credits": 371,
+          "computeUnits": 370.37055555555554,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 2.6",
+      "provider": "kling_26",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 2.5",
+      "provider": "kling_25",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 260,
+          "computeUnits": 259.25944444444445,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 2.5 Turbo",
+      "provider": "kling_25_turbo",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 156,
+          "computeUnits": 155.55555555555554,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Vidu Q2",
+      "provider": "vidu_q2",
+      "inDropdown": false,
+      "maxDuration": 8,
+      "supportedDurations": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 223,
+          "computeUnits": 222.22222222222223,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Vidu Q3",
+      "provider": "vidu_q3",
+      "inDropdown": true,
+      "maxDuration": 16,
+      "supportedDurations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 4,
+          "durationNote": null,
+          "resolution": "720P",
+          "credits": 457,
+          "computeUnits": 456.2961111111111,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Hailuo 02",
+      "provider": "minimax_hailuo02",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        6,
+        10
+      ],
+      "defaultResolutionLabel": "768p",
+      "entries": [
+        {
+          "duration": 6,
+          "durationNote": "无 4s/5s 档，取最短 6s",
+          "resolution": "768P",
+          "credits": 200,
+          "computeUnits": 200,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Seedance 1.0 Pro",
+      "provider": "seedance-1-0-pro",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": "720p",
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "720P",
+          "credits": 207,
+          "computeUnits": 206.9322222222222,
+          "isEstimated": true,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Runway Gen-4 Video",
+      "provider": "runwaygen4",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 186,
+          "computeUnits": 185.185,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Runway Gen-3",
+      "provider": "runway",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": 186,
+          "computeUnits": 185.185,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Hailuo",
+      "provider": "minimax",
+      "inDropdown": false,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "模型无时长档位，按接口默认",
+          "resolution": "默认",
+          "credits": 319,
+          "computeUnits": 318.5183333333333,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "MiniMax 01-Live",
+      "provider": "minimax_live",
+      "inDropdown": false,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "模型无时长档位，按接口默认",
+          "resolution": "默认",
+          "credits": 319,
+          "computeUnits": 318.5183333333333,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "MiniMax H3 Max Recast",
+      "provider": "minimax_h3max_recast",
+      "inDropdown": false,
+      "maxDuration": null,
+      "supportedDurations": null,
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": null,
+          "durationNote": "无时长档位；接口未传时长（≈按 1s 计费）",
+          "resolution": "1080P",
+          "credits": 334,
+          "computeUnits": 333.3333333333333,
+          "isEstimated": false,
+          "source": "api"
+        },
+        {
+          "duration": 5,
+          "durationNote": "无 4s/30s 档，取 5s（$0.45/秒）",
+          "resolution": "1080P",
+          "credits": 1667,
+          "computeUnits": 1666.6666666666667,
+          "isEstimated": false,
+          "source": "api"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Kling 1.0 Pro",
+      "provider": "klingPro",
+      "inDropdown": false,
+      "maxDuration": 10,
+      "supportedDurations": [
+        5,
+        10
+      ],
+      "defaultResolutionLabel": null,
+      "entries": [
+        {
+          "duration": 5,
+          "durationNote": "无 4s 档，取 5s",
+          "resolution": "默认",
+          "credits": null,
+          "note": "平台无定价数据（接口 unavailable；前端计费配置中无此模型/组合）",
+          "source": null
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "scrapedAt": "2026-11-23T03:12:20.267Z",
+  "platform": "krea",
+  "page": "https://www.krea.ai/video",
+  "settings": {
+    "ratio": "16:9",
+    "durations": "短档 4s（无 4s 取 5s，再无为最短档）+ 长档 30s（仅支持 30s 的模型）",
+    "resolution": "各模型默认分辨率（部分模型无分辨率维度，显示默认）",
+    "creditNote": "积分为 /api/jobs/estimate 接口返回 computeUnits 向上取整（source=api）；接口 unavailable 的档位按 krea 官方前端计费逻辑兜底（billing rates；汇率优先 exchangeRate，缺失时按模型表 computeUnits 反推，source=billing）；null = 平台无定价数据"
+  }
+}
